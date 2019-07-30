@@ -1,8 +1,8 @@
-#Z_HOUDINI#
+## Z_HOUDINI ##
 collection of houdini hda's focused on procedural modelling and game dev
 
 ## PLACEMENT ##
-- **[z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK](https://github.com/corvaeoboro/zhoudini/)** Place an array of pieces using collision checks to avoid intersection
+- **[z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK](https://github.com/corvaeoboro/zhoudini/)** : Place an array of pieces using collision checks to avoid intersection
 - z_TRANSFORM_ITERATE_COLLISION_CHECK
 - Z_WIRE_OVERLAP_OFFSET
 
