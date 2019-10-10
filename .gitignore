@@ -10,3 +10,7 @@ hip/vfx_liquid_explode_01/geo/
 hip/vfx_liquid_explode_01/pdgtemp/
 *.mp4
 *.fbx
+*.exr
+*.txt
+*.jpg
+*.mantra_checkpoint
