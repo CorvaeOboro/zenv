@@ -25,7 +25,7 @@ collection of houdini hda's focused on procedural modelling and game dev
 - z_KEEP_ONLY_LARGEST_CONNECTED_ELEMENT
 - z_REMOVE_PIECES_BY_VOLUME
 - z_UV_OVERLAP_CHECK
-- ![z_EXPORT_FOR_MAYA](icon/z_EXPORT_FOR_MAYA_icon.png)z_EXPORT_FOR_MAYA
+- ![z_EXPORT_FOR_MAYA](icon/z_EXPORT_FOR_MAYA_icon.png){:height="100px" width="100px"}z_EXPORT_FOR_MAYA
 
 ## UE4 HDAS (WIP) ##
 - HAPI_Test_Curves_ObjectMergeInput
