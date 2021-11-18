@@ -1,7 +1,13 @@
 ## Z_HOUDINI ##
-collection of houdini hda's focused on procedural modelling and game dev .
-many of these are WIP and may not work , all tools are unlocked open source , feel free to edit \ redistribute !
-credit and thanks to gamedev sidefxlab , qL , and others , using lots of their hda within these .
+collection of houdini tools , hda's focused on procedural modelling and game dev .
+an open source work in progress , many thanks to the other libraries :
+
+## RECOMMENDED LIBRARIES ##
+SideFXLabs	**[https://github.com/sideeffects/SideFXLabs](https://github.com/sideeffects/SideFXLabs)** 
+qLib	**[https://github.com/qLab/qLib](https://github.com/qLab/qLib)** 
+AeLib	**[https://github.com/Aeoll/Aelib](https://github.com/Aeoll/Aelib)** 
+nLib	**[https://github.com/Njordy/nLib](https://github.com/Njordy/nLib)** 
+mifthtools	**[https://github.com/mifth/mifthtools](https://github.com/mifth/mifthtools)** 
 
 ## PLACEMENT ##
 - **[z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK](https://github.com/corvaeoboro/zhoudini/)** : Place an array of pieces using collision checks to avoid intersection
