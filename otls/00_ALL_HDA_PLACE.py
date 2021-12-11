@@ -1,4 +1,5 @@
 # FOR EACH HDA IN FOLDER PLACE THEM IN HOUDINI FOR QA of lib
+# THIS CREATES THE PYTHON CODE TO THEN BE PASTED INTO SHELL
 OBJ_start = '''OBJ_start = hou.node("/obj/ALL_HDA")'''
 print(OBJ_start)
 PYquotes = """'"""
