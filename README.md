@@ -1,6 +1,10 @@
 ## ZENV ##
-- collection of houdini tools , hda's focused on procedural modelling environments .
+- houdini hda tools focused on procedural modelling environments .
 - an open source work in progress , many thanks to the other libraries and tutorials .
+
+## EXAMPLES ##
+
+![00_ALL_HDA](/hip/00_ALL_HDA/00_ALL_HDA.jpg?raw=true "00_ALL_HDA")
 
 ## TOOLS ##
 
@@ -14,7 +18,7 @@
 - <img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_HELIX_ROOTS_icon.png" width = "40" height = "40"/> **[z_GEN_HELIX_ROOTS](https://github.com/corvaeoboro/zenv/)** : fixed uv generation for 1x2 texture uv set and lightmap uv set
 
 - <img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_BRICKMAIN_01_icon.png" width = "40" height = "40"/> **[z_GEN_BRICKMAIN_01](https://github.com/corvaeoboro/zenv/)** : stone brick variation generator , for game ready stone bricks to be placed
-- <img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_DIFFERENTIAL_REACTION_TUBES_icon.png" width = "40" height = "40"/> **[z_DIFFERENTIAL_REACTION_TUBES](https://github.com/corvaeoboro/zenv/)** : fill mesh with intestine brain like tubes based on simulated diffusion chemical reaction
+- <img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_DIFFERENTIAL_REACTION_TUBES_icon.png" width = "40" height = "40"/> **[z_DIFFUSION_REACTION_TUBES](https://github.com/corvaeoboro/zenv/)** : fill mesh with intestine brain like tubes based on simulated diffusion chemical reaction
 - <img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_CURL_LINES_LOOP_icon.png" width = "40" height = "40"/> **[z_CURL_LINES_LOOP](https://github.com/corvaeoboro/zenv/)** : create lines curling around the mesh using curlnoise deforming the mesh topology 
 - <img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_PETAL_FORM_icon.png" width = "40" height = "40"/> **[z_GEN_PETAL_FORM](https://github.com/corvaeoboro/zenv/)** : generate petal from curve backbone and multiple warped elipse curves defining the shape changes over the length of the backbone 
 - <img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_DRIP_GRUNGE_icon.png" width = "40" height = "40"/> **[z_DRIP_GRUNGE](https://github.com/corvaeoboro/zenv/)** : drip grunge under overhangs , longer when near more drip neighboors
