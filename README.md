@@ -13,11 +13,8 @@
 
 <img src="/hip/00_ALL_HDA/00_ALL_HDA.jpg?raw=true" height="250" />
 
-## TYPE ##
-|      |      |      |
-| :--- | :--- | :--- |
 ## LAYOUT ##
-|      |      |      |
+|   ______   |      |      |
 | :--- | :--- | :--- |
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK_icon.png" width = "40" height = "40"/>| **[z_COPY_TO_POINT S_BY_PIECENUM_INTERSECTIONCHECK](https://github.com/corvaeoboro/zenv/tree/master/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK)**|copy variants by piecenum attribute with collision checks|
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_COPY_MESH_ALONG_CURVE_DEFORM_icon.png" width = "40" height = "40"/>| **[z_COPY_MESH_ALO NG_CURVE_DEFORM](https://github.com/corvaeoboro/zenv/tree/master/hip/z_COPY_MESH_ALONG_CURVE_DEFORM)**|pipe / wire curvedeform for houdini engine . copies input mesh without stretching along a curve , options to add cuts for smoother bending , can project normals outward from curve ,|
