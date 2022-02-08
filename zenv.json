@@ -1,0 +1,9 @@
+{
+    "enable": true,
+    "path": "$HOUDINI_PACKAGE_PATH/zenv",
+    "env": [
+        {
+            "HOUDINI_OTLSCAN_PATH": "$HOUDINI_PACKAGE_PATH/zenv/otls"
+        }
+    ]
+}
