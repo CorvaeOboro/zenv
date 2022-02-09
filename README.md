@@ -12,9 +12,10 @@
 ## TOOLS LIST ##
 
 <img src="/hip/00_ALL_HDA/00_ALL_HDA.jpg?raw=true" height="250" />
-hip/00_ALL_HDA/00_ALL_HDA
 
-click name for tool example 
+**[hip/00_ALL_HDA/00_ALL_HDA.hip](https://github.com/corvaeoboro/zenv/tree/master/hip/00_ALL_HDA)**
+
+click names below for tool example :
 
 ## LAYOUT ##
 |  ______    |      |      |
@@ -153,15 +154,6 @@ click name for tool example
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_NORMAL_AREA_WEIGHTED_icon.png" width = "40" height = "40"/>| **[z_NORMAL_AREA_W EIGHTED](https://github.com/corvaeoboro/zenv/tree/master/hip/z_NORMAL_AREA_WEIGHTED)**|normals smoothed face area weighted alternative|
-## EXPORT ##
-|  ______    |      |      |
-| :--- | :--- | :--- |
-|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_EXPORT_TO_UNREAL_icon.png" width = "40" height = "40"/>| **[z_EXPORT_TO_UNR EAL](https://github.com/corvaeoboro/zenv/tree/master/hip/z_EXPORT_TO_UNREAL)**|common settings used before exporting fbx to unreal , material parameter conversion , point color to vtx conversion
-. scale and rotation|
-|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_EXPORT_MAYA_FBX_icon.png" width = "40" height = "40"/>| **[z_EXPORT_MAYA_F BX](https://github.com/corvaeoboro/zenv/tree/master/hip/z_EXPORT_MAYA_FBX)**|applies specific detail parameters for maya - named uv channels , named color sets for vertex colors , uv1 to uv2 , preps for export to fbx|
-## OTHER ##
-|  ______    |      |      |
-| :--- | :--- | :--- |
 
 ## RECOMMENDED LIBRARIES ##
 - SideFXLabs	**[https://github.com/sideeffects/SideFXLabs](https://github.com/sideeffects/SideFXLabs)** 
