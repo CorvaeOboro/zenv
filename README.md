@@ -15,6 +15,26 @@
 
 **[hip/00_ALL_HDA/00_ALL_HDA.hip](https://github.com/corvaeoboro/zenv/tree/master/hip/00_ALL_HDA)**
 
+[ LAYOUT ]( https://github.com/CorvaeOboro/zenv#layout )
+[ CREATE ]( https://github.com/CorvaeOboro/zenv#create )
+[ MODIFY ]( https://github.com/CorvaeOboro/zenv#modify )
+[ REMOVAL ]( https://github.com/CorvaeOboro/zenv#removal )
+[ UV ]( https://github.com/CorvaeOboro/zenv#uv )
+[ QA ]( https://github.com/CorvaeOboro/zenv#qa )
+[ TEXTURE ]( https://github.com/CorvaeOboro/zenv#texture )
+[ VFX ]( https://github.com/CorvaeOboro/zenv#vfx )
+[ CAM ]( https://github.com/CorvaeOboro/zenv#cam )
+[ GROUP ]( https://github.com/CorvaeOboro/zenv#group )
+[ SORT ]( https://github.com/CorvaeOboro/zenv#sort )
+[ CLEAN ]( https://github.com/CorvaeOboro/zenv#clean )
+[ OPTIMIZE ]( https://github.com/CorvaeOboro/zenv#optimize )
+[ MESH ]( https://github.com/CorvaeOboro/zenv#mesh )
+[ COLOR ]( https://github.com/CorvaeOboro/zenv#color )
+[ MATERIAL ]( https://github.com/CorvaeOboro/zenv#material )
+[ NORMALS ]( https://github.com/CorvaeOboro/zenv#normals )
+[ EXPORT ]( https://github.com/CorvaeOboro/zenv#export )
+[ OTHER ]( https://github.com/CorvaeOboro/zenv#other )
+
 click names below for tool example :
 
 ## LAYOUT ##
@@ -101,9 +121,7 @@ click names below for tool example :
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_COLLISION_INTERSECT_CHECK_icon.png" width = "40" height = "40"/>| **[z_COLLISION_INT ERSECT_CHECK](https://github.com/corvaeoboro/zenv/tree/master/hip/z_COLLISION_INTERSECT_CHECK)**|detect and show intersections with provided collision geometry . useful to avoid clipping into level geometry beyond a specific distance threshold|
-## CHARACTER ##
-|  ______    |      |      |
-| :--- | :--- | :--- |
+
 ## TEXTURE ##
 |  ______    |      |      |
 | :--- | :--- | :--- |
@@ -124,11 +142,11 @@ click names below for tool example :
 ## SORT ##
 |  ______    |      |      |
 | :--- | :--- | :--- |
-|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_SORT_BY_LINEAXIS_icon.png" width = "40" height = "40"/>| **[z_SORT_BY_LINEA XIS](https://github.com/corvaeoboro/zenv/tree/master/hip/z_SORT_BY_LINEAXIS)**|sorts a line contigously linearly along axis , useful when must enforce a point order on a curved line when normal sort by axis would skip around|
+|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_SORT_BY_LINEAXIS_icon.png" width = "40" height = "40"/>| **[z_SORT_BY_LINEA XIS](https://github.com/corvaeoboro/zenv/tree/master/hip/z_SORT_BY_LINEAXIS)**|sorts a line contigously linearly along axis , enforcing a point order on a curved line when sort by axis may skip around|
 ## CLEAN ##
 |  ______    |      |      |
 | :--- | :--- | :--- |
-|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_REVERSE_BY_N_UP_icon.png" width = "40" height = "40"/>| **[z_REVERSE_BY_N_ UP](https://github.com/corvaeoboro/zenv/tree/master/hip/z_REVERSE_BY_N_UP)**|attempts to fix reversed facing ( backfacing )  normals on subobjects , useful for fixing exported levels with mirrored (negative scaled ) objects|
+|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_REVERSE_BY_N_UP_icon.png" width = "40" height = "40"/>| **[z_REVERSE_BY_N_ UP](https://github.com/corvaeoboro/zenv/tree/master/hip/z_REVERSE_BY_N_UP)**|attempts to fix reversed backfacing normals on multiple sub meshes, useful for fixing exported levels with mirrored ( negative scaled ) objects|
 ## OPTIMIZE ##
 |  ______    |      |      |
 | :--- | :--- | :--- |
@@ -137,7 +155,7 @@ click names below for tool example :
 ## MESH ##
 |  ______    |      |      |
 | :--- | :--- | :--- |
-|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_VDB_INTERNAL_FILL_icon.png" width = "40" height = "40"/>| **[z_VDB_INTERNAL_ FILL](https://github.com/corvaeoboro/zenv/tree/master/hip/z_VDB_INTERNAL_FILL)**|vdb to mesh , combines multiple lower res vdb's that are eroded to fill in the internal spaces|
+|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_VDB_INTERNAL_FILL_icon.png" width = "40" height = "40"/>| **[z_VDB_INTERNAL_ FILL](https://github.com/corvaeoboro/zenv/tree/master/hip/z_VDB_INTERNAL_FILL)**|mesh to vdb to mesh , combines multiple lower res vdb's that are eroded to fill in the internal spaces|
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_SHRINKWRAP_VORONOI_CLUSTERS_icon.png" width = "40" height = "40"/>| **[z_SHRINKWRAP_VO RONOI_CLUSTERS](https://github.com/corvaeoboro/zenv/tree/master/hip/z_SHRINKWRAP_VORONOI_CLUSTERS)**|similar to convex decomposition , cuts mesh into pieces via voronoi , shrinkwraps those pieces . useful for rocky shapes|
 ## COLOR ##
 |  ______    |      |      |
