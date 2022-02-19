@@ -4,10 +4,11 @@
 
 ## EXAMPLES ##
 
-
-<img src="/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES_01.jpg?raw=true" height="250" /><img src="/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK.jpg?raw=true" height="250" />
-<img src="/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true" height="250" /><img src="/hip/z_DRIP_GRUNGE/z_DRIP_GRUNGE.jpg?raw=true" height="250" />
-<img src="/hip/z_TILEABLE/z_TILEABLE.jpg?raw=true" height="250" />
+|      |      |      |
+| :---: | :---: | :---: |
+| <img src="/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true" height="250" /> |  <img src="/hip/z_GEN_BRICKMAIN_01/z_GEN_BRICKMAIN_01_thumb.jpg?raw=true" height="250" />    |   <img src="/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE_thumb.jpg?raw=true" height="250" />    |
+| <img src="/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES.jpg?raw=true" height="250" /> | <img src="/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK_thumb.jpg?raw=true" height="250" /> |  <img src="/hip/z_COLOR_NOISE_HI/z_COLOR_NOISE_HI_thumb.jpg?raw=true" height="250" />    |
+| <img src="/hip/z_HELIX_ALONG_CURVE/z_HELIX_ALONG_CURVE_thumb.jpg?raw=true" height="250" /> | <img src="/hip/z_DRIP_GRUNGE/z_DRIP_GRUNGE_thumb.jpg?raw=true" height="250" /> |  <img src="/hip/z_TILEABLE/z_TILEABLE.jpg?raw=true" height="250" />     |
 
 ## TOOLS LIST ##
 
@@ -168,6 +169,7 @@ click names below for tool example :
 - AeLib	**[https://github.com/Aeoll/Aelib](https://github.com/Aeoll/Aelib)** 
 - nLib	**[https://github.com/Njordy/nLib](https://github.com/Njordy/nLib)** 
 - mifthtools	**[https://github.com/mifth/mifthtools](https://github.com/mifth/mifthtools)** 
+- jhorikawa https://github.com/jhorikawa/HoudiniHowtos
 
 ## CC0 ##
 free to all , creative commons cc0 
