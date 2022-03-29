@@ -1,6 +1,8 @@
 ## ZENV ##
 - houdini hda tools focused on procedural modelling environments .
-- an open source work in progress , many thanks to sidefx and other [libraries]( https://github.com/CorvaeOboro/zenv#recommended-libraries ) and tutorials .
+- open source work in progress , many thanks to sidefx and other [libraries]( https://github.com/CorvaeOboro/zenv#recommended-libraries ) and tutorials .
+
+[DOWNLOAD]( https://github.com/CorvaeOboro/zenv/releases/download/ZENV_20220328/zenv_20220328.zip )  | [INSTALL NOTES]( https://github.com/CorvaeOboro/zenv#install ) | [ALL EXAMPLES]( https://github.com/CorvaeOboro/zenv#tools-list )
 
 |      |      |      |      |
 | :---: | :---: | :---: | :---: |
@@ -8,9 +10,13 @@
 | <img src="/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES.jpg?raw=true" width="170" height="170" /> |  <img src="/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true" width="170" height="170" /> |  <img src="/hip/z_DRIP_GRUNGE/z_DRIP_GRUNGE_thumb.jpg?raw=true" width="170" height="170" /> | <img src="/hip/z_GEN_MOSS_HANGING/z_GEN_MOSS_HANGING_thumb.jpg?raw=true" width="170" height="170" />   |   
 | <img src="/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX_thumb.jpg?raw=true" width="170" height="170" /> | <img src="/hip/z_COLOR_NOISE_HI/z_COLOR_NOISE_HI_thumb.jpg?raw=true" width="170" height="170" />      |  <img src="/hip/z_GEN_REVOLVE_BASIC/z_GEN_REVOLVE_BASIC_thumb.jpg?raw=true" width="170" height="170" />   |    <img src="/hip/z_DIFFUSION_REACTION_TUBES/z_DIFFUSION_REACTION_TUBES_thumb.jpg?raw=true" width="170" height="170" />  | 
 
+## INSTALL ##
+- [DOWNLOAD]( https://github.com/CorvaeOboro/zenv/releases/download/zenv_20220130/zenv_20220130.zip ) , extract zip to any local path
+- Copy zenv.json to ( C:/Users/USER/Documents/houdini18.5/packages/ ) matching local user and houdini version
+- Edit zenv.json file text line to match local path to zenv folder
+- Alternatively may copy the included houdini.env to ( C:/Users/USER/Documents/houdini18.5/ ) editing to match local path of zenv folder
 
 ## TOOLS LIST ##
-
 jump to category :
 
 |       |___|      |___|       |___|       |___|       |
@@ -51,7 +57,7 @@ click names below for tool example :
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_STONE_BRICK_CIRCLE_icon.png" width = "40" height = "40"/>| **[z_GEN_STONE_BRI CK_CIRCLE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_STONE_BRICK_CIRCLE)**|generate a circular shaped brick section by evenly voronoi fracturing and extruding toward center . applies additional noise and separation to resemble stone|
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_MOSS_HANGING_icon.png" width = "40" height = "40"/>| **[z_GEN_MOSS_HANG ING](https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_MOSS_HANGING)**|creates hanging placements of moss mesh|
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_HELIX_ALONG_CURVE_icon.png" width = "40" height = "40"/>| **[z_HELIX_ALONG_C URVE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_HELIX_ALONG_CURVE)**|creates environment mesh for isometric snapmap pieces , used with PATH_BASE as its inputs for PDG|
-|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PATH_LEDGE_icon.png" width = "40" height = "40"/>| **[z_PATH_LEDGE ](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_LEDGE)**|input curve to get helix curve around / along it|
+|<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PATH_LEDGE_icon.png" width = "40" height = "40"/>| **[z_PATH_LEDGE ](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_LEDGE)**|creates environment mesh for isometric snapmap pieces , used with PATH_BASE as its inputs for PDG|
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_CURVE_FROM_TUBE_icon.png" width = "40" height = "40"/>| **[z_CURVE_FROM_TU BE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_CURVE_FROM_TUBE)**|centered curve from mesh ( even if mesh has nonuniform topology )|
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_VINES_GUIDED_icon.png" width = "40" height = "40"/>| **[z_GEN_VINES_GUI DED](https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_VINES_GUIDED)**|generate a vine tube using a wandering path finder guided variably by a curve or direction vector|
 |<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_CURVES_FROM_UV_ISLANDS_icon.png" width = "40" height = "40"/>| **[z_CURVES_FROM_U V_ISLANDS](https://github.com/corvaeoboro/zenv/tree/master/hip/z_CURVES_FROM_UV_ISLANDS)**|for each uv island create a line curve aligned by the longest angle or vertical\horizontal . useful for generating tree branch curves from existing low poly trees|
@@ -170,5 +176,5 @@ click names below for tool example :
 - mifthtools	**[https://github.com/mifth/mifthtools](https://github.com/mifth/mifthtools)** 
 - jhorikawa https://github.com/jhorikawa/HoudiniHowtos
 
-## CC0 ##
-free to all , creative commons cc0 
+## CREATIVE COMMONS ZERO ##
+free to all , creative commons cc0 , free to redistribute , no credit needed
