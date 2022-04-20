@@ -1,5 +1,5 @@
 ## ZENV ##
-- houdini hda tools focused on procedural modelling environments .
+- [houdini](https://www.sidefx.com/) hda tools focused on procedural modelling environments .
 - open source work in progress , many thanks to sidefx and other [libraries]( https://github.com/CorvaeOboro/zenv#recommended-libraries ) and tutorials .
 
 [DOWNLOAD]( https://github.com/CorvaeOboro/zenv/releases/download/ZENV_20220328/zenv_20220328.zip )  | [INSTALL NOTES]( https://github.com/CorvaeOboro/zenv#install ) | [ALL EXAMPLES]( https://github.com/CorvaeOboro/zenv#tools-list )
