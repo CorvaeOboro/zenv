@@ -170,4 +170,4 @@ click names below for tool example :
 - jhorikawa https://github.com/jhorikawa/HoudiniHowtos
 
 ## CREATIVE COMMONS ZERO ##
-free to all , creative commons cc0 , free to redistribute , no credit needed
+free to all , [creative commons CC0](https://creativecommons.org/publicdomain/zero/1.0/) , free to redistribute , no credit needed
