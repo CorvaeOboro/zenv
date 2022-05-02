@@ -1,5 +1,4 @@
-# z_GEN_HELIX_ROOTS
+# z_TILEABLE
+- copies input to each of the nearby quadrants preview tiling ( 4m default )
 
-![z_GEN_HELIX_ROOTS](/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true "z_GEN_HELIX_ROOTS")
-
-- create winding intertwined roots from an input guide line .
+![z_TILEABLE](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_TILEABLES/z_TILEABLE.jpg?raw=true "z_TILEABLE")

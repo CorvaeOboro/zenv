@@ -1,5 +1,5 @@
 # z_COLOR_NOISE_HI
-- assigns colors based multiple ramps based on curvature and occlusion  
-- stone preset
+- vertex colors based on multiple ramps driven by curvature , occlusion , and noise 
+- default stone preset
 
-![z_COLOR_NOISE_HI](/hip/z_COLOR_NOISE_HI/z_COLOR_NOISE_HI.jpg?raw=true "z_COLOR_NOISE_HI")
+![z_COLOR_NOISE_HI](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_NOISE_HI/z_COLOR_NOISE_HI.jpg?raw=true "z_COLOR_NOISE_HI")

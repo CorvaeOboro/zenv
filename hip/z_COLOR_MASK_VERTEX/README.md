@@ -1,6 +1,6 @@
 # z_COLOR_MASK_VERTEX
 
-![z_COLOR_MASK_VERTEX](/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX.jpg?raw=true "z_COLOR_MASK_VERTEX")
+![z_COLOR_MASK_VERTEX](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX.jpg?raw=true "z_COLOR_MASK_VERTEX")
 
 - RGB mask vertex colors setups for various material / shaders .
 - AO , Variation ( random per connected element ) , 
