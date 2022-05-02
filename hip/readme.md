@@ -1,9 +1,10 @@
+# ALL HDA TOOL EXAMPLES
 
 <h1>z_HELIX_ALONG_CURVE</h1>
-<p><img alt="z_HELIX_ALONG_CURVE" src="/hip/z_HELIX_ALONG_CURVE/z_HELIX_ALONG_CURVE.jpg?raw=true" title="z_HELIX_ALONG_CURVE" /></p>
 <ul>
-<li>input curve to get helix curve around / along it </li>
+<li>creates a helix curves along input curve  </li>
 </ul>
+<p><img alt="z_HELIX_ALONG_CURVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_HELIX_ALONG_CURVE/z_HELIX_ALONG_CURVE.jpg?raw=true" title="z_HELIX_ALONG_CURVE" /></p>
 <h1>z_EXPORT_TO_UNREAL</h1>
 <p>common settings used before exporting fbx to unreal , material parameter conversion , point color to vtx conversion
 . scale and rotation</p>
@@ -18,10 +19,10 @@
 <h1>z_DEFORM_BY_HELIX</h1>
 <p>deform the input mesh by a helix fit to the object bounds</p>
 <h1>z_GEN_HELIX_ROOTS</h1>
-<p><img alt="z_GEN_HELIX_ROOTS" src="/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true" title="z_GEN_HELIX_ROOTS" /></p>
 <ul>
-<li>create winding intertwined roots from an input guide line .</li>
+<li>creates winding intertwined roots from an input guide line .</li>
 </ul>
+<p><img alt="z_GEN_HELIX_ROOTS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true" title="z_GEN_HELIX_ROOTS" /></p>
 <h1>z_PATH_BASE</h1>
 <p>create a path floor section and collision for gameplay , creates directional variants for snapmap . this is the basis for all other path generation </p>
 <h1>z_GEN_PILLAR</h1>
@@ -34,40 +35,39 @@
 <p>mesh connect borders , simplified circular connect from input curves with different number of divisions, ideally a basic poly bridge with unified circular outward normals</p>
 <h1>z_COLOR_NOISE_HI</h1>
 <ul>
-<li>assigns colors based multiple ramps based on curvature and occlusion  </li>
-<li>stone preset</li>
+<li>vertex colors based on multiple ramps driven by curvature , occlusion , and noise </li>
+<li>default stone preset</li>
 </ul>
-<p><img alt="z_COLOR_NOISE_HI" src="/hip/z_COLOR_NOISE_HI/z_COLOR_NOISE_HI.jpg?raw=true" title="z_COLOR_NOISE_HI" /></p>
+<p><img alt="z_COLOR_NOISE_HI" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_NOISE_HI/z_COLOR_NOISE_HI.jpg?raw=true" title="z_COLOR_NOISE_HI" /></p>
 <h1>z_TUBE_BOOLEAN_PANELS</h1>
 <p>cut instanced panels from cyllinder surface</p>
 <h1>z_CAM_ISOMETRIC</h1>
 <ul>
 <li>camera with crane\boom arm setup matching isometric game settings</li>
 </ul>
-<p><img alt="z_CAM_ISOMETRIC" src="/hip/z_CAM_ISOMETRIC/z_CAM_ISOMETRIC.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
+<p><img alt="z_CAM_ISOMETRIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CAM_ISOMETRIC/z_CAM_ISOMETRIC.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
 <h1>z_CONFORM_INTERSECTING_LERP</h1>
 <p>conform around a given colllision object if has intersection</p>
 <p><img alt="z_CONFORM_INTERSECTING_LERP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CONFORM_INTERSECTING_LERP/z_CONFORM_INTERSECTING_LERP.jpg?raw=true" title="z_CONFORM_INTERSECTING_LERP" /></p>
 <h1>z_GEN_VINES_GUIDED</h1>
 <p>generate a vine tube using a wandering path finder guided variably by a curve or direction vector</p>
 <h1>z_GEN_REVOLVE_BASIC</h1>
-<p><img alt="z_GEN_REVOLVE_BASIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_REVOLVE_BASIC/z_GEN_REVOLVE_BASIC.jpg?raw=true" title="z_GEN_REVOLVE_BASIC" />
-<img alt="z_GEN_REVOLVE_BASIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_REVOLVE_BASIC/z_GEN_REVOLVE_BASIC_thumb.jpg?raw=true" title="z_GEN_REVOLVE_BASIC" /></p>
-<p>create revolved mesh path deformed to backbone curve , input profile and backbone curves </p>
+<p>creates revolved mesh , path deformed by backbone curve , input profile and backbone curves </p>
+<p><img alt="z_GEN_REVOLVE_BASIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_REVOLVE_BASIC/z_GEN_REVOLVE_BASIC.jpg?raw=true" title="z_GEN_REVOLVE_BASIC" /></p>
 <h1>z_TRANSFORM_ITERATE_COLLISION_CHECK</h1>
 <p>iteratively move pieces towards nearest goal while avoid itersection with collision ( an iterative simplified gravity / attraction sop based )</p>
 <h1>z_GEN_BRICKMAIN_01</h1>
-<p><img alt="z_GEN_BRICKMAIN_01" src="/hip/z_GEN_BRICKMAIN_01/z_GEN_BRICKMAIN_01.jpg?raw=true" title="z_GEN_BRICKMAIN_01" /></p>
 <ul>
-<li>stone brick variation generator , for mid and high poly stone bricks </li>
-<li>outputs lowpoly mesh with piecenum , and bake distributed grid of lows and highs </li>
+<li>creates stone brick variations , fractured , cracks , chipped </li>
+<li>outputs lowpoly and hipoly meshes with piecenum , and a distributed grid for texture baking highs to low </li>
 </ul>
+<p><img alt="z_GEN_BRICKMAIN_01" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_BRICKMAIN_01/z_GEN_BRICKMAIN_01.jpg?raw=true" title="z_GEN_BRICKMAIN_01" /></p>
 <h1>z_DEFORM_BY_AXIS</h1>
 <ul>
 <li>bounding box ramp deformation , setup to allow multiple axis ramps </li>
 <li>useful for procedural relative deformations </li>
 </ul>
-<p><img alt="z_DEFORM_BY_AXIS" src="/hip/z_DEFORM_BY_AXIS/z_DEFORM_BY_AXIS.jpg?raw=true" title="z_DEFORM_BY_AXIS" /></p>
+<p><img alt="z_DEFORM_BY_AXIS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_DEFORM_BY_AXIS/z_DEFORM_BY_AXIS.jpg?raw=true" title="z_DEFORM_BY_AXIS" /></p>
 <h1>z_MESH_SUBTRACT_COLLAPSE_END</h1>
 <p>simple boolean subtract with option to collapse . useful for quick edits in ue4 </p>
 <h1>z_MESH_CHIP_CRACKED</h1>
@@ -84,16 +84,14 @@
 <h1>z_VFX_SLASH_from_ANIM</h1>
 <p>create a smoothed  swipe mesh for vfx , sword slashing</p>
 <h1>z_GEN_MOSS_HANGING</h1>
-<p><img alt="z_GEN_MOSS_HANGING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_MOSS_HANGING/z_GEN_MOSS_HANGING.jpg?raw=true" title="z_GEN_MOSS_HANGING" />
-<img alt="z_GEN_MOSS_HANGING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_MOSS_HANGING/z_GEN_MOSS_HANGING_thumb.jpg?raw=true" title="z_GEN_MOSS_HANGING" /></p>
-<p>creates hanging placements of moss mesh</p>
+<p>creates hanging placements of moss mesh , leaves , spirals . placed onto input mesh .</p>
+<p><img alt="z_GEN_MOSS_HANGING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_MOSS_HANGING/z_GEN_MOSS_HANGING.jpg?raw=true" title="z_GEN_MOSS_HANGING" /></p>
 <h1>z_DRIP_GRUNGE</h1>
-<p><img alt="z_DRIP_GRUNGE" src="/hip/z_DRIP_GRUNGE/z_DRIP_GRUNGE.jpg?raw=true" title="z_DRIP_GRUNGE" /></p>
 <ul>
-<li>drip grunge under overhangs </li>
-<li>longer when near drip neighboors</li>
+<li>drips grunge under overhangs of input mesh . longer when near drip neighboors .</li>
 <li>output mesh or bake vertex color</li>
 </ul>
+<p><img alt="z_DRIP_GRUNGE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_DRIP_GRUNGE/z_DRIP_GRUNGE.jpg?raw=true" title="z_DRIP_GRUNGE" /></p>
 <h1>z_TRIM_BORDER</h1>
 <p>create trim matching input square curve , maps specific textures \ UV to sides and top bot</p>
 <h1>z_UV_AXIS_ALIGN_SNAP</h1>
@@ -122,17 +120,17 @@
 <h1>z_UV_TEXEL_DENSITY_CHECK</h1>
 <p>check texel density with colorized debug , handles multiple materials with different texture resolutions by specifiying the materials name string and their rez</p>
 <h1>z_GEN_STONE_BRICK_CIRCLE</h1>
-<p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
 <ul>
-<li>generate a circular shaped brick section by evenly voronoi fracturing and extruding toward center .</li>
-<li>applies additional noise and separation to resemble stone </li>
+<li>generates a circular shaped brick section by evenly voronoi fracturing and extruding toward center .</li>
+<li>applies additional noise and separation to resemble stone surface</li>
 </ul>
+<p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
 <h1>z_LIGHTMAP_UV_GEN</h1>
 <p>UVs creation for lightmaps , stored to uv1 with higher merge threshold </p>
 <h1>z_CURVES_FROM_UV_ISLANDS</h1>
 <p>for each uv island create a line curve aligned by the longest angle or vertical\horizontal . useful for generating tree branch curves from existing low poly trees</p>
 <h1>z_COLOR_MASK_VERTEX</h1>
-<p><img alt="z_COLOR_MASK_VERTEX" src="/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
+<p><img alt="z_COLOR_MASK_VERTEX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
 <ul>
 <li>RGB mask vertex colors setups for various material / shaders .</li>
 <li>AO , Variation ( random per connected element ) , </li>
@@ -156,11 +154,11 @@ dirt in crevices ( 0 ) of rock ( R ) ,  with moss on top ( G ) , near water ( B 
 <p>example :
 stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt in crevices ( G ) , randomly altering the brightness per brick by ( B ) .</p>
 <h1>z_REVERSE_BY_N_UP</h1>
-<p><img alt="z_REVERSE_BY_N_UP" src="/hip/z_REVERSE_BY_N_UP/z_REVERSE_BY_N_UP.jpg?raw=true" title="z_REVERSE_BY_N_UP" /></p>
 <ul>
 <li>attempts to fix reversed facing ( backfacing )  normals on subobjects for an overhead camera </li>
 <li>useful for fixing exports from some levels that mirrored assets with negative scaling</li>
 </ul>
+<p><img alt="z_REVERSE_BY_N_UP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_REVERSE_BY_N_UP/z_REVERSE_BY_N_UP.jpg?raw=true" title="z_REVERSE_BY_N_UP" /></p>
 <h1>z_MATERIAL_AUTO_ASSIGN</h1>
 <p>shop materialpath auto assignment from an existing material path to the houdini scene files specific . uses regex to parse the name </p>
 <h1>z_REMESH_RAY_SPHERE</h1>
@@ -194,12 +192,12 @@ stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt i
 <p>normals smoothed face area weighted alternative</p>
 <h1>z_COLOR_LINES_SCRATCH_VTX</h1>
 <p>cuts in elipses to geo and applys vertex colors for stratches along an axis</p>
-<p><img alt="z_COLOR_LINES_SCRATCH_VTX" src="/hip/z_COLOR_LINES_SCRATCH_VTX/z_COLOR_LINES_SCRATCH_VTX.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
-<h1>z_GEN_HELIX_ROOTS</h1>
-<p><img alt="z_GEN_HELIX_ROOTS" src="/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true" title="z_GEN_HELIX_ROOTS" /></p>
+<p><img alt="z_COLOR_LINES_SCRATCH_VTX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_LINES_SCRATCH_VTX/z_COLOR_LINES_SCRATCH_VTX.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
+<h1>z_TILEABLE</h1>
 <ul>
-<li>create winding intertwined roots from an input guide line .</li>
+<li>copies input to each of the nearby quadrants preview tiling ( 4m default )</li>
 </ul>
+<p><img alt="z_TILEABLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_TILEABLES/z_TILEABLE.jpg?raw=true" title="z_TILEABLE" /></p>
 <h1>z_TRIM_CIRCLE</h1>
 <p>circular trim piece</p>
 <h1>z_GEN_PETAL_FORM</h1>
@@ -214,18 +212,9 @@ stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt i
 <li>input a mesh , outputs a centered curve within the mesh , even if the topology is highly irregular</li>
 <li>similar to the sidefx labs tool = Labs Straight Skeleton 3d  </li>
 </ul>
-<p><img alt="z_CURVE_FROM_TUBE" src="/hip/z_CURVE_FROM_TUBE/z_CURVE_FROM_TUBE.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
+<p><img alt="z_CURVE_FROM_TUBE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURVE_FROM_TUBE/z_CURVE_FROM_TUBE.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
 <h1>z_COLLISION_INTERSECT_CHECK</h1>
 <p>detect and show intersections with provided collision geometry . useful to avoid clipping into level geometry beyond a specific distance threshold </p>
 <h1>z_REMOVE_PIECES_BY_VOLUME</h1>
 <p>for each connected element , remove if doesnt match min or max measured volume , also has options of perimeter or other measurements</p>
 <p><img alt="z_REMOVE_PIECES_BY_VOLUME" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_REMOVE_PIECES_BY_VOLUME/z_REMOVE_PIECES_BY_VOLUME.jpg?raw=true" title="z_REMOVE_PIECES_BY_VOLUME" /></p>
-<h1>z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK</h1>
-<p><img alt="z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK" src="/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
-<ul>
-<li>a placement tool for multiple objects .  </li>
-<li>copy meshes by piecenum prim attribute with collision checks   </li>
-<li>current version is piecenum based , in progress to be updated to variant based</li>
-</ul>
-<h1>z_CHAR_SEPARATE_BY_WEIGHTS</h1>
-<p>updated with kinefx , changing a bit to be used in conjunction with conform to ue4 rig</p>
