@@ -1,0 +1,37 @@
+
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>em_characters</title>
+<style type="text/css">
+<!--
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #BBBBBB;
+}
+-->
+</style></head>
+
+<body style="background-color:#0d1117;">
+
+<h1>z_VDB_INTERNAL_FILL</h1>
+<p>mesh to vdb to mesh , combines multiple lower res vdb's that are eroded to fill in the internal spaces</p>
+<h1>z_CURVE_FROM_TUBE</h1>
+<ul>
+<li>input a mesh , outputs a centered curve within the mesh , even if the topology is highly irregular</li>
+<li>similar to the sidefx labs tool = Labs Straight Skeleton 3d  </li>
+</ul>
+<p><img alt="z_CURVE_FROM_TUBE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURVE_FROM_TUBE/z_CURVE_FROM_TUBE.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
+<h1>z_CURVES_FROM_UV_ISLANDS</h1>
+<p>for each uv island create a line curve aligned by the longest angle or vertical\horizontal . useful for generating tree branch curves from existing low poly trees</p>
+<h1>z_SHRINKWRAP_VORONOI_CLUSTERS</h1>
+<p>similar to convex decomposition , cuts mesh into pieces via voronoi , shrinkwraps those pieces . useful for rocky shapes</p>
+<h1>z_TUBE_MESH_BETWEEN_TO_CIRCLES</h1>
+<p>input 2 circles , create a cyllinder between them </p>
+<h1>z_POLYREDUCE_GRADIENT_QUADS</h1>
+<p>polyreduce setup with gradient retention to keep mostly quads , with secondary reduction</p>
+<h1>z_REMESH_RAY_SPHERE</h1>
+<p>remesh using sphere around object , iteratively raycast and smooth to approximate shape</p>
+
+</body>
+</html>
