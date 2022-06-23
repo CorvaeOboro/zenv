@@ -29,10 +29,14 @@ body {
 <p>fills mesh with intestine brain like tubes based on simulated diffusion chemical reaction</p>
 <p><img alt="z_DIFFUSION_REACTION_TUBES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_DIFFUSION_REACTION_TUBES/z_DIFFUSION_REACTION_TUBES.jpg?raw=true" title="z_DIFFUSION_REACTION_TUBES" /></p>
 <h1>z_CURL_LINES_LOOP</h1>
-<p>create lines curling on mesh surface using curlnoise loop</p>
+<ul>
+<li>create lines curling on mesh surface using curlnoise loop</li>
+</ul>
 <p><img alt="z_CURL_LINES_LOOP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURL_LINES_LOOP/z_CURL_LINES_LOOP.jpg?raw=true" title="z_CURL_LINES_LOOP" /></p>
 <h1>z_GEN_PETAL_FORM</h1>
-<p>generates petal from curve backbone and multiple warped elipse curves defining the shape changes over the length of the backbone </p>
+<ul>
+<li>generates petal from curve backbone and multiple warped elipse curves defining the shape changes over the length of the backbone </li>
+</ul>
 <p><img alt="z_GEN_PETAL_FORM" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_PETAL_FORM/z_GEN_PETAL_FORM.jpg?raw=true" title="z_GEN_PETAL_FORM" /></p>
 <h1>z_DRIP_GRUNGE</h1>
 <ul>
@@ -51,7 +55,9 @@ body {
 <li>z_GEN_VINES_WITH_LEAVES.hda in unreal 4 houdini engine , leaves input from static mesh </li>
 </ul>
 <h1>z_GEN_REVOLVE_BASIC</h1>
-<p>creates revolved mesh , path deformed by backbone curve , input profile and backbone curves </p>
+<ul>
+<li>creates revolved mesh , path deformed by backbone curve , input profile and backbone curves . handles profile centering by curve bounds , useful when creating mesh curves in level locations away from 0,0,0 .  </li>
+</ul>
 <p><img alt="z_GEN_REVOLVE_BASIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_REVOLVE_BASIC/z_GEN_REVOLVE_BASIC.jpg?raw=true" title="z_GEN_REVOLVE_BASIC" /></p>
 <h1>z_GEN_STAIRWAY</h1>
 <p>generate stairway made of bricks </p>
@@ -61,7 +67,9 @@ body {
 <h1>z_CURL_LINES_THEN_PLACE_SPIRALS</h1>
 <p>creates curllines on the surface of mesh then copies spirals to the geometry with collision detection</p>
 <h1>z_GEN_CIRCLES_RADIATE_PATTERN</h1>
-<p>creates circular patterns inspired by asian design . scatter circles , then radiate those circles outward while avoiding intersection by order or generation . </p>
+<ul>
+<li>creates circular patterns inspired by asian design . scatter circles , then radiate those circles outward while avoiding intersection by order or generation . </li>
+</ul>
 <p><img alt="z_GEN_CIRCLES_RADIATE_PATTERN" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_CIRCLES_RADIATE_PATTERN/z_GEN_CIRCLES_RADIATE_PATTERN_thumb.jpg?raw=true" title="z_GEN_CIRCLES_RADIATE_PATTERN" /></p>
 <h1>z_GEN_STONE_BRICK_CIRCLE</h1>
 <ul>
@@ -78,32 +86,49 @@ body {
 </ul>
 <p><img alt="z_HELIX_ALONG_CURVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_HELIX_ALONG_CURVE/z_HELIX_ALONG_CURVE.jpg?raw=true" title="z_HELIX_ALONG_CURVE" /></p>
 <h1>z_PATH_BASE</h1>
-<p>create a path floor section and collision for gameplay , creates directional variants for snapmap . this is the basis for all other path generation </p>
+<ul>
+<li>create a path floor section and collision for gameplay , creates directional variants for snapmap . this is the basis for all other path generation </li>
+</ul>
+<p><img alt="z_PATH_BASE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PATH_BASE/z_PATH_BASE.jpg?raw=true" title="z_PATH_BASE" /></p>
 <h1>z_PATH_LEDGE</h1>
 <p>creates environment mesh for isometric snapmap pieces , used with PATH_BASE as its inputs for PDG</p>
 <h1>z_GEN_VINES_GUIDED</h1>
 <p>generate a vine tube using a wandering path finder guided variably by a curve or direction vector</p>
 <h1>z_WIRE_OVERLAPING_OFFSET</h1>
-<p>creates wires rayed to ground , properly overlapping . input curves and collision </p>
+<ul>
+<li>creates wires rayed to ground , properly overlapping . input curves and collision 
+<img alt="z_WIRE_OVERLAPING_OFFSET" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_WIRE_OVERLAPING_OFFSET/z_WIRE_OVERLAPING_OFFSET.jpg?raw=true" title="z_WIRE_OVERLAPING_OFFSET" /></li>
+</ul>
 <h1>z_GEN_PILLAR</h1>
 <p>generate pillar - holding multiple brick generators and circle brick generators assembled to create a full pillar .</p>
 <h1>z_GEN_ROCK_4m</h1>
-<p>generates rock surface , fractures input mesh and applies randomized offsets , setup for pdg randomness</p>
+<ul>
+<li>generates rock surface , fractures input mesh and applies randomized offsets , setup for pdg randomness</li>
+</ul>
 <p><img alt="z_GEN_ROCK_4m" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_ROCK_4m/z_GEN_ROCK_4m.jpg?raw=true" title="z_GEN_ROCK_4m" /></p>
 <h1>z_GEN_TUBES_FINDPATHS_FROM_CURVE</h1>
-<p>generates tubes that procedurally find a path to not intersect other tubes following along the length of a guide curve</p>
+<ul>
+<li>generates tubes that procedurally find a path to not intersect other tubes following along the length of a guide curve</li>
+</ul>
+<p><img alt="z_GEN_TUBES_FINDPATHS_FROM_CURVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_TUBES_FINDPATHS_FROM_CURVE/z_GEN_TUBES_FINDPATHS_FROM_CURVE.jpg?raw=true" title="z_GEN_TUBES_FINDPATHS_FROM_CURVE" /></p>
 <h1>z_GEN_SWORD_FROM_IMAGE</h1>
 <p>creates a sword mesh from image , traces png alpha  , orients vertically , thickens from center skeleton line , sets uvs to match image , bakes colors to vertex colors</p>
 <h1>z_GEN_TREE_TUBE_PATHFIND</h1>
 <p>generate a tree using shortest path thru curves scattered and connected around collision objects and previous tree roots</p>
 <h1>z_GEN_CRACK_BRANCHING</h1>
-<p>creates branching crack mesh used for booleaning other meshes</p>
+<ul>
+<li>creates branching crack mesh used for booleaning other meshes</li>
+</ul>
 <p><img alt="z_GEN_CRACK_BRANCHING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_CRACK_BRANCHING/z_GEN_CRACK_BRANCHING.jpg?raw=true" title="z_GEN_CRACK_BRANCHING" /></p>
 <h1>z_GEN_GIZMO</h1>
-<p>axis gizmo for debug</p>
+<ul>
+<li>axis gizmo for debug</li>
+</ul>
 <p><img alt="z_GEN_GIZMO" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_GIZMO/z_GEN_GIZMO.jpg?raw=true" title="z_GEN_GIZMO" /></p>
 <h1>z_GLASS_BOOLEAN</h1>
-<p>input mesh with irregular shaped holes , creates an intersection plane cut to fit , adds inset with vertex color falloff from edge for shader</p>
+<ul>
+<li>input mesh with irregular shaped holes , creates an intersection plane cut to fit , adds inset with vertex color falloff from edge for shader</li>
+</ul>
 <p><img alt="z_GLASS_BOOLEAN" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GLASS_BOOLEAN/z_GLASS_BOOLEAN.jpg?raw=true" title="z_GLASS_BOOLEAN" /></p>
 <h1>z_GEN_LATTICE_GRIDMESH</h1>
 <ul>
@@ -112,7 +137,9 @@ body {
 </ul>
 <p><img alt="z_GEN_LATTICE_GRIDMESH" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_LATTICE_GRIDMESH/z_GEN_LATTICE_GRIDMESH.jpg?raw=true" title="z_GEN_LATTICE_GRIDMESH" /></p>
 <h1>z_UE4_PATH_2SPLINE_COLLISION</h1>
-<p>input two curves defining the border of a path , creates floor geo and collision for gameplay in ue4</p>
+<ul>
+<li>input two curves defining the border of a path , creates floor geo and collision for gameplay in ue4</li>
+</ul>
 <p><img alt="z_UE4_PATH_2SPLINE_COLLISION" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_UE4_PATH_2SPLINE_COLLISION/z_UE4_PATH_2SPLINE_COLLISION.jpg?raw=true" title="z_UE4_PATH_2SPLINE_COLLISION" /></p>
 
 </body>
