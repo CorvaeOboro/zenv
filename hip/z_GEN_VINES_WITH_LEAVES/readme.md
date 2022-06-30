@@ -4,6 +4,4 @@
 
 ![z_GEN_VINES_WITH_LEAVES](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES_01.jpg?raw=true "z_GEN_VINES_WITH_LEAVES")
 
-![z_GEN_VINES_WITH_LEAVES](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES.jpg?raw=true "z_GEN_VINES_WITH_LEAVES")
-
 - z_GEN_VINES_WITH_LEAVES.hda in unreal 4 houdini engine , leaves input from static mesh 
