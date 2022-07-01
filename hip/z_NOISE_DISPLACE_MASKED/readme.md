@@ -3,3 +3,5 @@
 - useful for hi poly mesh surfacing  
 
 ![z_NOISE_DISPLACE_MASKED](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_NOISE_DISPLACE_MASKED/z_NOISE_DISPLACE_MASKED.jpg?raw=true "z_NOISE_DISPLACE_MASKED")
+
+![z_NOISE_DISPLACE_MASKED](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_NOISE_DISPLACE_MASKED/z_NOISE_DISPLACE_MASKED_large_variants.jpg?raw=true "z_NOISE_DISPLACE_MASKED")
