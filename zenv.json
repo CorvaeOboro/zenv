@@ -3,7 +3,7 @@
     "path": "$HOUDINI_PACKAGE_PATH/zenv",
     "env": [
         {
-            "HOUDINI_OTLSCAN_PATH": "$HOUDINI_PACKAGE_PATH/zenv/otls"
+            "HOUDINI_OTLSCAN_PATH": "$HOUDINI_PACKAGE_PATH/zenv/hda"
         }
     ]
 }
