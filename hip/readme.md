@@ -1,6 +1,5 @@
 # ALL HDA TOOL EXAMPLES
 
-
 <h1>z_GEN_BRICKMAIN_01</h1>
 <ul>
 <li>creates stone brick variations , fractured , cracks , chipped </li>
@@ -37,7 +36,6 @@
 <li>iterative growth step collision checks , slow however precise , leaves avoid collision  .</li>
 </ul>
 <p><img alt="z_GEN_VINES_WITH_LEAVES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES_01.jpg?raw=true" title="z_GEN_VINES_WITH_LEAVES" /></p>
-<p><img alt="z_GEN_VINES_WITH_LEAVES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES.jpg?raw=true" title="z_GEN_VINES_WITH_LEAVES" /></p>
 <ul>
 <li>z_GEN_VINES_WITH_LEAVES.hda in unreal 4 houdini engine , leaves input from static mesh </li>
 </ul>
@@ -98,8 +96,6 @@
 <li>generates tubes that procedurally find a path to not intersect other tubes following along the length of a guide curve</li>
 </ul>
 <p><img alt="z_GEN_TUBES_FINDPATHS_FROM_CURVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_TUBES_FINDPATHS_FROM_CURVE/z_GEN_TUBES_FINDPATHS_FROM_CURVE.jpg?raw=true" title="z_GEN_TUBES_FINDPATHS_FROM_CURVE" /></p>
-<h1>z_GEN_SWORD_FROM_IMAGE</h1>
-<p>creates a sword mesh from image , traces png alpha  , orients vertically , thickens from center skeleton line , sets uvs to match image , bakes colors to vertex colors</p>
 <h1>z_GEN_TREE_TUBE_PATHFIND</h1>
 <p>generate a tree using shortest path thru curves scattered and connected around collision objects and previous tree roots</p>
 <h1>z_GEN_CRACK_BRANCHING</h1>
@@ -123,17 +119,18 @@
 <li>ideal for use with lattice deformer </li>
 </ul>
 <p><img alt="z_GEN_LATTICE_GRIDMESH" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_LATTICE_GRIDMESH/z_GEN_LATTICE_GRIDMESH.jpg?raw=true" title="z_GEN_LATTICE_GRIDMESH" /></p>
-<h1>z_UE4_PATH_2SPLINE_COLLISION</h1>
+<h1>z_PATH_2SPLINE_COLLISION</h1>
 <ul>
 <li>input two curves defining the border of a path , creates floor geo and collision for gameplay in ue4</li>
 </ul>
-<p><img alt="z_UE4_PATH_2SPLINE_COLLISION" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_UE4_PATH_2SPLINE_COLLISION/z_UE4_PATH_2SPLINE_COLLISION.jpg?raw=true" title="z_UE4_PATH_2SPLINE_COLLISION" /></p>
+<p><img alt="z_PATH_2SPLINE_COLLISION" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PATH_2SPLINE_COLLISION/z_PATH_2SPLINE_COLLISION.jpg?raw=true" title="z_PATH_2SPLINE_COLLISION" /></p>
 <h1>z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK</h1>
 <ul>
-<li>a placement tool for multiple objects variants .  </li>
-<li>copy meshes by piecenum prim attribute with collision checks .   </li>
+<li>a placement tool for multiple objects variants with collision checks .</li>
+<li>a brute force object packing with options for filling gaps , and tileable or radial collision .  </li>
+<li>copies meshes using 'piecenum' prim attribute .   </li>
 </ul>
-<p><img alt="z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
+<p><img alt="z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK.jpg?raw=true" title="z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK" /></p>
 <h1>z_COPY_MESH_ALONG_CURVE_DEFORM</h1>
 <ul>
 <li>pipe / wire curve deform , similar to path deform modified specifically for repeating modular meshes .</li>
@@ -144,6 +141,8 @@
 <li>copy by piecenum to dynamic evenly spaced grid - useful when baking and review</li>
 </ul>
 <p><img alt="z_COPY_TO_EVENLY_DISTRIBUTED_GRID" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COPY_TO_EVENLY_DISTRIBUTED_GRID/z_COPY_TO_EVENLY_DISTRIBUTED_GRID.jpg?raw=true" title="z_COPY_TO_EVENLY_DISTRIBUTED_GRID" /></p>
+<h1>z_TILE_4m</h1>
+<p>copies input to each of the nearby quadrants preview tiling ( 4m default )</p>
 <h1>z_TRANSFORM_ITERATE_COLLISION_CHECK</h1>
 <ul>
 <li>iteratively move pieces towards nearest goal while avoid itersection with collision ( an iterative simplified gravity / attraction sop based )</li>
@@ -168,16 +167,21 @@
 <p><img alt="z_DEFORM_BY_AXIS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_DEFORM_BY_AXIS/z_DEFORM_BY_AXIS.jpg?raw=true" title="z_DEFORM_BY_AXIS" /></p>
 <h1>z_NOISE_DISPLACE_MASKED</h1>
 <ul>
-<li>using vex attribute noise with presets apply noise to hi poly mesh surface </li>
+<li>3d noise ramp creates a mask modulating the displacement of mesh by a second 3d noise </li>
+<li>useful for hi poly mesh surfacing  </li>
 </ul>
 <p><img alt="z_NOISE_DISPLACE_MASKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_NOISE_DISPLACE_MASKED/z_NOISE_DISPLACE_MASKED.jpg?raw=true" title="z_NOISE_DISPLACE_MASKED" /></p>
+<p><img alt="z_NOISE_DISPLACE_MASKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_NOISE_DISPLACE_MASKED/z_NOISE_DISPLACE_MASKED_large_variants.jpg?raw=true" title="z_NOISE_DISPLACE_MASKED" /></p>
 <h1>z_MESH_WRAP_DEFORM_BY_UV</h1>
 <ul>
 <li>deform mesh to another mesh by using the flattened UVs , useful to wrap a pattern around another</li>
 </ul>
 <p><img alt="z_MESH_WRAP_DEFORM_BY_UV" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_WRAP_DEFORM_BY_UV/z_MESH_WRAP_DEFORM_BY_UV.jpg?raw=true" title="z_MESH_WRAP_DEFORM_BY_UV" /></p>
 <h1>z_MESH_SURFACE_SIMPLE_REMESH</h1>
-<p>mesh surface simple remesh ray projects a grid unto the input geo and remeshes then reduces , helpful for fixing chaotic geo and non manifold errors .</p>
+<ul>
+<li>ray projects a grid unto the input geo and remeshes then reduces .</li>
+<li>helpful for fixing chaotic geo and non manifold errors .</li>
+</ul>
 <p><img alt="z_MESH_SURFACE_SIMPLE_REMESH" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_SURFACE_SIMPLE_REMESH/z_MESH_SURFACE_SIMPLE_REMESH.jpg?raw=true" title="z_MESH_SURFACE_SIMPLE_REMESH" /></p>
 <h1>z_PLANARIZE_MULTIPLE_SURFACES</h1>
 <ul>
@@ -191,12 +195,12 @@
 <p><img alt="z_MESH_CHIP_CRACKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_CHIP_CRACKED/z_MESH_CHIP_CRACKED.jpg?raw=true" title="z_MESH_CHIP_CRACKED" /></p>
 <h1>z_CONFORM_INTERSECTING_LERP</h1>
 <ul>
-<li>conform around a given colllision object if has intersection</li>
+<li>input mesh is conformed around a given colllision object if is intersecting</li>
 </ul>
-<p><img alt="z_CONFORM_INTERSECTING_LERP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CONFORM_INTERSECTING_LERP/z_CONFORM_INTERSECTING_LERP_C.jpg?raw=true" title="z_CONFORM_INTERSECTING_LERP" /></p>
+<p><img alt="z_CONFORM_INTERSECTING_LERP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CONFORM_INTERSECTING_LERP/z_CONFORM_INTERSECTING_LERP.jpg?raw=true" title="z_CONFORM_INTERSECTING_LERP" /></p>
 <h1>z_MESH_SLICER_SAVE</h1>
 <ul>
-<li>separates large meshes into grided sections and exports them to fbx , options for specific area exports , and compatible with houdini engine .  </li>
+<li>separates large meshes into worldspace grid sections of specific size and exports them to fbx </li>
 </ul>
 <p><img alt="z_MESH_SLICER_SAVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_SLICER_SAVE/z_MESH_SLICER_SAVE.jpg?raw=true" title="z_MESH_SLICER_SAVE" /></p>
 <h1>z_MASK_TO_LINE</h1>
@@ -221,6 +225,14 @@
 <p>separate the input into two outputs with an indent along the separation , useful separating environment shell into terraced layers</p>
 <h1>z_CUT_INTERSECT_DARKEN</h1>
 <p>darken a surface from the intersections of other objects , with option to boolean those cuts in</p>
+<h1>z_ITEM_ABILITY_ICON</h1>
+<p>creates an icon of ability , setup for TOPs randomization to generate dataset</p>
+<h1>z_ITEM_RING</h1>
+<p>creates variety of ring items , helix , diffusion tubes , rock gemstones ,  setup for TOPs randomization by wedgenum .</p>
+<h1>z_ITEM_RING_FROM_IMAGE</h1>
+<p>creates a projected 3d ring from isometric image , setup for TOPs processing folder of images to 3d relit renders</p>
+<h1>z_ITEM_SWORD_FROM_IMAGE</h1>
+<p>creates a sword mesh from image , traces png alpha  , orients vertically , thickens from center skeleton line , sets uvs to match image , bakes colors to vertex colors</p>
 <h1>z_REMOVE_PIECES_BY_VOLUME</h1>
 <ul>
 <li>for each connected element , remove if doesnt match min or max measured volume , also has options of perimeter or other measurements</li>
@@ -257,6 +269,7 @@
 <h1>z_UV_POLYWIRE</h1>
 <ul>
 <li>creates polywire with specific UVs , useful when sweep is not producing desired bends</li>
+<li>seam is oriented toward specific direction to better hide from view</li>
 </ul>
 <p><img alt="z_UV_POLYWIRE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_UV_POLYWIRE/z_UV_POLYWIRE.jpg?raw=true" title="z_UV_POLYWIRE" /></p>
 <h1>z_UV_TRIM</h1>
@@ -347,12 +360,3 @@ stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt i
 <h1>z_COLOR_LINES_SCRATCH_VTX</h1>
 <p>cuts in elipses to geo and applys vertex colors for stratches along an axis</p>
 <p><img alt="z_COLOR_LINES_SCRATCH_VTX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_LINES_SCRATCH_VTX/z_COLOR_LINES_SCRATCH_VTX.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
-<h1>z_VERTEXCOLOR_CONVERT</h1>
-<p>converts standard rgb vertex color blending to multilayer vertex blending with alpha</p>
-<h1>z_UDIM_CONVERT</h1>
-<p>convert single material UDIM to multiple materials , and reposition the uvs into zero to one</p>
-<h1>z_NORMAL_AREA_WEIGHTED</h1>
-<p>normals smoothed face area weighted alternative</p>
-<h1>z_EXPORT_TO_UNREAL</h1>
-<p>common settings used before exporting fbx to unreal , material parameter conversion , point color to vtx conversion
-. scale and rotation</p>
