@@ -4,3 +4,5 @@
 
 ![z_GEN_BRICKMAIN_01](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_BRICKMAIN_01/z_GEN_BRICKMAIN_01.jpg?raw=true "z_GEN_BRICKMAIN_01")
 
+![z_GEN_BRICKMAIN_02](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_BRICKMAIN_01/z_GEN_BRICKMAIN_02.jpg?raw=true "z_GEN_BRICKMAIN_02")
+
