@@ -20,11 +20,6 @@ body {
 <li>outputs lowpoly and hipoly meshes with piecenum , and a distributed grid for texture baking highs to low </li>
 </ul>
 <p><img alt="z_GEN_BRICKMAIN_01" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_BRICKMAIN_01/z_GEN_BRICKMAIN_01.jpg?raw=true" title="z_GEN_BRICKMAIN_01" /></p>
-<h1>z_GEN_HELIX_ROOTS</h1>
-<ul>
-<li>creates winding intertwined roots from an input guide line .</li>
-</ul>
-<p><img alt="z_GEN_HELIX_ROOTS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_HELIX_ROOTS/z_GEN_HELIX_ROOTS.jpg?raw=true" title="z_GEN_HELIX_ROOTS" /></p>
 <h1>z_DIFFUSION_REACTION_TUBES</h1>
 <p>fills mesh with intestine brain like tubes based on simulated diffusion chemical reaction</p>
 <p><img alt="z_DIFFUSION_REACTION_TUBES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_DIFFUSION_REACTION_TUBES/z_DIFFUSION_REACTION_TUBES.jpg?raw=true" title="z_DIFFUSION_REACTION_TUBES" /></p>
@@ -33,26 +28,12 @@ body {
 <li>create lines curling on mesh surface using curlnoise loop</li>
 </ul>
 <p><img alt="z_CURL_LINES_LOOP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURL_LINES_LOOP/z_CURL_LINES_LOOP.jpg?raw=true" title="z_CURL_LINES_LOOP" /></p>
-<h1>z_GEN_PETAL_FORM</h1>
-<ul>
-<li>generates petal from curve backbone and multiple warped elipse curves defining the shape changes over the length of the backbone </li>
-</ul>
-<p><img alt="z_GEN_PETAL_FORM" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_PETAL_FORM/z_GEN_PETAL_FORM.jpg?raw=true" title="z_GEN_PETAL_FORM" /></p>
 <h1>z_DRIP_GRUNGE</h1>
 <ul>
 <li>drips grunge under overhangs of input mesh . longer when near drip neighboors .</li>
 <li>output mesh or bake vertex color</li>
 </ul>
 <p><img alt="z_DRIP_GRUNGE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_DRIP_GRUNGE/z_DRIP_GRUNGE.jpg?raw=true" title="z_DRIP_GRUNGE" /></p>
-<h1>z_GEN_VINES_WITH_LEAVES</h1>
-<ul>
-<li>creates vines conforming to surface of mesh guided by line .</li>
-<li>iterative growth step collision checks , slow however precise , leaves avoid collision  .</li>
-</ul>
-<p><img alt="z_GEN_VINES_WITH_LEAVES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_VINES_WITH_LEAVES/z_GEN_VINES_WITH_LEAVES_01.jpg?raw=true" title="z_GEN_VINES_WITH_LEAVES" /></p>
-<ul>
-<li>z_GEN_VINES_WITH_LEAVES.hda in unreal 4 houdini engine , leaves input from static mesh </li>
-</ul>
 <h1>z_GEN_REVOLVE_BASIC</h1>
 <ul>
 <li>creates revolved mesh , path deformed by backbone curve , input profile and backbone curves . handles profile centering by curve bounds , useful when creating mesh curves in level locations away from 0,0,0 .  </li>
@@ -76,28 +57,21 @@ body {
 <li>applies additional noise and separation to resemble stone surface</li>
 </ul>
 <p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
-<h1>z_GEN_MOSS_HANGING</h1>
-<p>creates hanging placements of moss mesh , leaves , spirals . placed onto input mesh .</p>
-<p><img alt="z_GEN_MOSS_HANGING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_MOSS_HANGING/z_GEN_MOSS_HANGING.jpg?raw=true" title="z_GEN_MOSS_HANGING" /></p>
 <h1>z_HELIX_ALONG_CURVE</h1>
 <ul>
 <li>creates a helix curves along input curve  </li>
 </ul>
 <p><img alt="z_HELIX_ALONG_CURVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_HELIX_ALONG_CURVE/z_HELIX_ALONG_CURVE.jpg?raw=true" title="z_HELIX_ALONG_CURVE" /></p>
-<h1>z_PATH_BASE</h1>
-<ul>
-<li>create a path floor section and collision for gameplay , creates directional variants for snapmap . this is the basis for all other path generation </li>
-</ul>
-<p><img alt="z_PATH_BASE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PATH_BASE/z_PATH_BASE.jpg?raw=true" title="z_PATH_BASE" /></p>
-<h1>z_PATH_LEDGE</h1>
-<p>creates environment mesh for isometric snapmap pieces , used with PATH_BASE as its inputs for PDG</p>
-<h1>z_GEN_VINES_GUIDED</h1>
-<p>generate a vine tube using a wandering path finder guided variably by a curve or direction vector</p>
 <h1>z_WIRE_OVERLAPING_OFFSET</h1>
 <ul>
 <li>creates wires rayed to ground , properly overlapping . input curves and collision 
 <img alt="z_WIRE_OVERLAPING_OFFSET" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_WIRE_OVERLAPING_OFFSET/z_WIRE_OVERLAPING_OFFSET.jpg?raw=true" title="z_WIRE_OVERLAPING_OFFSET" /></li>
 </ul>
+<h1>z_GEN_RUNES</h1>
+<p>creates rune like symbols</p>
+<h1>z_GEN_ROCK_THIRDS</h1>
+<p>creates a rock stylized by lot subdivision rule of thirds , setup for PDG</p>
+<p><img alt="z_GEN_ROCK_THIRDS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_ROCK_THIRDS/z_GEN_ROCK_THIRDS.jpg?raw=true" title="z_GEN_ROCK_THIRDS" /></p>
 <h1>z_GEN_PILLAR</h1>
 <p>generate pillar - holding multiple brick generators and circle brick generators assembled to create a full pillar .</p>
 <h1>z_GEN_ROCK_4m</h1>
@@ -110,8 +84,6 @@ body {
 <li>generates tubes that procedurally find a path to not intersect other tubes following along the length of a guide curve</li>
 </ul>
 <p><img alt="z_GEN_TUBES_FINDPATHS_FROM_CURVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_TUBES_FINDPATHS_FROM_CURVE/z_GEN_TUBES_FINDPATHS_FROM_CURVE.jpg?raw=true" title="z_GEN_TUBES_FINDPATHS_FROM_CURVE" /></p>
-<h1>z_GEN_TREE_TUBE_PATHFIND</h1>
-<p>generate a tree using shortest path thru curves scattered and connected around collision objects and previous tree roots</p>
 <h1>z_GEN_CRACK_BRANCHING</h1>
 <ul>
 <li>creates branching crack mesh used for booleaning other meshes</li>
@@ -133,11 +105,6 @@ body {
 <li>ideal for use with lattice deformer </li>
 </ul>
 <p><img alt="z_GEN_LATTICE_GRIDMESH" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_LATTICE_GRIDMESH/z_GEN_LATTICE_GRIDMESH.jpg?raw=true" title="z_GEN_LATTICE_GRIDMESH" /></p>
-<h1>z_PATH_2SPLINE_COLLISION</h1>
-<ul>
-<li>input two curves defining the border of a path , creates floor geo and collision for gameplay in ue4</li>
-</ul>
-<p><img alt="z_PATH_2SPLINE_COLLISION" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PATH_2SPLINE_COLLISION/z_PATH_2SPLINE_COLLISION.jpg?raw=true" title="z_PATH_2SPLINE_COLLISION" /></p>
 
 </body>
 </html>

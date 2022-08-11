@@ -16,15 +16,13 @@ body {
 
 <h1>z_VDB_INTERNAL_FILL</h1>
 <p>mesh to vdb to mesh , combines multiple lower res vdb's that are eroded to fill in the internal spaces</p>
-<h1>z_CURVE_FROM_TUBE</h1>
+<h1>z_EDGEGROUP_BY_UV_AXIS</h1>
 <ul>
-<li>input a mesh , outputs a centered curve within the mesh , even if the topology is highly irregular</li>
-<li>similar to the sidefx labs tool = Labs Straight Skeleton 3d  </li>
+<li>edgegroup based on axis of uvs , useful for polybeveling specific edges procedurally</li>
 </ul>
-<p><img alt="z_CURVE_FROM_TUBE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURVE_FROM_TUBE/z_CURVE_FROM_TUBE.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
-<h1>z_CURVES_FROM_UV_ISLANDS</h1>
-<p>for each uv island create a line curve aligned by the longest angle or vertical\horizontal . useful for generating tree branch curves from existing low poly trees</p>
-<p><img alt="z_CURVES_FROM_UV_ISLANDS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURVES_FROM_UV_ISLANDS/z_CURVES_FROM_UV_ISLANDS.jpg?raw=true" title="z_CURVES_FROM_UV_ISLANDS" /></p>
+<p><img alt="z_EDGEGROUP_BY_UV_AXIS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_EDGEGROUP_BY_UV_AXIS/z_EDGEGROUP_BY_UV_AXIS.jpg?raw=true" title="z_EDGEGROUP_BY_UV_AXIS" /></p>
+<h1>z_POLYBEVEL_SAFE</h1>
+<p>polybevel with fix for exploding points</p>
 <h1>z_SHRINKWRAP_VORONOI_CLUSTERS</h1>
 <ul>
 <li>similar to convex decomposition , cuts mesh into pieces via voronoi , shrinkwraps those pieces . useful for rocky shapes
@@ -32,6 +30,12 @@ body {
 </ul>
 <h1>z_TUBE_MESH_BETWEEN_TO_CIRCLES</h1>
 <p>input 2 circles , create a cyllinder between them </p>
+<h1>z_REVERSE_BY_N_UP</h1>
+<ul>
+<li>attempts to fix reversed facing ( backfacing )  normals on subobjects for an overhead camera </li>
+<li>useful for fixing exports from some levels that mirrored assets with negative scaling</li>
+</ul>
+<p><img alt="z_REVERSE_BY_N_UP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_REVERSE_BY_N_UP/z_REVERSE_BY_N_UP.jpg?raw=true" title="z_REVERSE_BY_N_UP" /></p>
 <h1>z_POLYREDUCE_GRADIENT_QUADS</h1>
 <ul>
 <li>polyreduce setup with gradient retention to keep mostly quads , with secondary reduction
