@@ -12,6 +12,8 @@ RGB vertex color setup for variations , example stone brick structure .
 example :
 stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt in crevices ( G ) , randomly altering the brightness per brick by ( B ) .
 
+//==================================================================================
+
 ![z_COLOR_MASK_VERTEX](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX_water_proximity.jpg?raw=true "z_COLOR_MASK_VERTEX")
 
 ## LAYERED VERTEX COLORS
