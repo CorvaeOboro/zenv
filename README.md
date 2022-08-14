@@ -175,6 +175,11 @@ click names below for tool example :
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_NORMAL_AREA_WEIGHTED"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_NORMAL_AREA_WEIGHTED_icon.png" width = "40" height = "40"/></a>| **[z NORMAL AREA WEIGHTED](https://github.com/corvaeoboro/zenv/tree/master/hip/z_NORMAL_AREA_WEIGHTED)**|normals smoothed face area weighted alternative|
 
+## PYTHON ##
+- HOUDINI_HDA_PLACE_ALL.py = for each hda in a folder creates hython script to place the nodes in houdini 
+- HOUDINI_PATH_TOPs_CREATE_SET.py = creates hython script to place TOP nodes for each PATH mesh component
+- UNREAL_PATH_CREATE_SNAPMAPS.py = for each set of PATH meshes creates unreal map for each corresponding variant
+
 ## RECOMMENDED LIBRARIES ##
 - SideFXLabs	**[https://github.com/sideeffects/SideFXLabs](https://github.com/sideeffects/SideFXLabs)** 
 - qLib	**[https://github.com/qLab/qLib](https://github.com/qLab/qLib)** 
