@@ -1,3 +1,5 @@
 # z_PLANTS_SCATTER_LEDGE
 
-layouts hanging plants aligned along edges of input mesh with collision checks
+places hanging plants instances aligned along edges of input mesh with collision checks
+
+![z_PLANTS_SCATTER_LEDGE](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_SCATTER_LEDGE/z_PLANTS_SCATTER_LEDGE.jpg?raw=true "z_PLANTS_SCATTER_LEDGE")
