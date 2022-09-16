@@ -52,8 +52,11 @@ HDANODE_OUTFILE1param_start = '''.setParms({'outputfile1':'''
 HDANODE_OUTTAG1param_start = '''.setParms({'outputtag1':'''
 
 HDA_fileinput = "inputfile"
-HDA_Base_Path = "H:/HOUDINI/ZENV/otls/z_PATH_BASE.hda"
-HDA_Ledge_Path = "H:/HOUDINI/ZENV/otls/z_PATH_LEDGE.hda"
+#HDA_Path = "H:/HOUDINI/ZENV/hda/"
+HDA_Path = "H:/MODELS/HOUDINI/00_OTL_DIGITALASSET/Z/hda/"
+HDA_Base_Path = HDA_Path + "z_PATH_BASE.hda"
+HDA_Ledge_Path = HDA_Path + "z_PATH_LEDGE.hda"
+HDA_Ledge_Pools_Path = HDA_Path + "z_PATH_LEDGE_POOLS.hda"
 
 PATH_DIR_ARRAY = ["TURN_RU","TURN_UL","TURN_LD","TURN_DR","TURN_RD","TURN_UR","TURN_LU","TURN_DL"]
 PATH_DIR_START_ARRAY = ["START_R","START_U","START_L","START_D"]
@@ -180,8 +183,12 @@ def create_tops_code_gen(createnodes , connectnodes) :
         textfile_output.write('\n') # newline
       # set HDA
       HDA_Base_Path_current = HDA_Base_Path
-      if ( current_PATH_set != "BASE") :
+      if ( current_PATH_set == "BASE") :
+        HDA_Base_Path_current = HDA_Base_Path
+      if ( current_PATH_set == "LEDGE") :
         HDA_Base_Path_current = HDA_Ledge_Path
+      if ( current_PATH_set == "POOLS") :
+        HDA_Base_Path_current = HDA_Ledge_Pools_Path
       HDANODE_HDAparam_final = HDA_NODE_name + NODE_param_start + PYNODE_param_quotes + "inputfile" + PYNODE_param_quotes + NODE_param_mid + PYNODE_param_quotes + HDA_Base_Path_current + PYNODE_param_quotes + NODE_param_end
       print(HDANODE_HDAparam_final)
       textfile_output.write(HDANODE_HDAparam_final) #START
