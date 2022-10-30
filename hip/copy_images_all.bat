@@ -1,0 +1,2 @@
+python copy_images_all.py
+pause
