@@ -15,7 +15,7 @@
 - Edit zenv.json file text line to match local path to zenv folder
 - Alternatively may copy the included houdini.env to ( C:/Users/USER/Documents/houdini18.5/ ) editing to match local path of zenv folder
 
-## HDATOOLS LIST ##
+## HDA TOOLS LIST ##
 jump to category :
 
 |[ CREATE ]( https://github.com/CorvaeOboro/zenv#create)| |[ PLANTS ]( https://github.com/CorvaeOboro/zenv#plants )| |[ ITEM ]( https://github.com/CorvaeOboro/zenv#item )| |[ PATH ]( https://github.com/CorvaeOboro/zenv#path )|| 
