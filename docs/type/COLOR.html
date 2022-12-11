@@ -1,35 +1,21 @@
 
-<html >
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>em_characters</title>
-<style type="text/css">
-<!--
-body {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #BBBBBB;
-}
--->
-</style></head>
+  <html >
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>em_characters</title>
+  <style type="text/css">
+  <!--
+  body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #BBBBBB;
+  }
+  -->
+  </style></head>
 
-<body style="background-color:#0d1117;">
-
+  <body style="background-color:#0d1117;">
+  
 <h1>z_COLOR_MASK_VERTEX</h1>
-<p><img alt="z_COLOR_MASK_VERTEX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
-<ul>
-<li>RGB mask vertex colors setups for various material / shaders .</li>
-<li>AO , Variation ( random per connected element ) , </li>
-<li>localized gradients ( Z axis per connected element ) </li>
-<li>proximity to secondary input meshes</li>
-</ul>
-<h2>LAYERED VERTEX COLORS</h2>
-<p>RGB vertex color setup for material blending on environment meshes .
-- 0 = occlusion
-- R = base
-- G = direction vector 
-- B = secondary mesh proximity </p>
-<p>example :
-dirt in crevices ( 0 ) of rock ( R ) ,  with moss on top ( G ) , near water ( B ) .</p>
+<p><img alt="z_COLOR_MASK_VERTEX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX_variants.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
 <h2>VARIANTS VERTEX COLORS</h2>
 <p>RGB vertex color setup for variations , example stone brick structure .
 - 0 = base 
@@ -38,6 +24,16 @@ dirt in crevices ( 0 ) of rock ( R ) ,  with moss on top ( G ) , near water ( B 
 - B = random per element</p>
 <p>example :
 stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt in crevices ( G ) , randomly altering the brightness per brick by ( B ) .</p>
+<p>//==================================================================================</p>
+<p><img alt="z_COLOR_MASK_VERTEX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX_water_proximity.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
+<h2>LAYERED VERTEX COLORS</h2>
+<p>RGB vertex color setup for material blending on environment meshes .
+- 0 = occlusion
+- R = base
+- G = direction vector 
+- B = secondary mesh proximity </p>
+<p>example :
+dirt in crevices ( 0 ) of rock ( R ) ,  with moss on top ( G ) , near water ( B ) .</p>
 <h1>z_COLOR_NOISE_HI</h1>
 <ul>
 <li>vertex colors based on multiple ramps driven by curvature , occlusion , and noise </li>
@@ -50,5 +46,6 @@ stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt i
 <h1>z_VERTEXCOLOR_CONVERT</h1>
 <p>converts standard rgb vertex color blending to multilayer vertex blending with alpha</p>
 
-</body>
-</html>
+  </body>
+  </html>
+  

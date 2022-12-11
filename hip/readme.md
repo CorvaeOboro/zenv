@@ -1,5 +1,6 @@
 # ALL HDA TOOL EXAMPLES
 
+
 <h1>z_GEN_BRICKMAIN_01</h1>
 <ul>
 <li>creates stone brick variations , fractured , cracks , chipped </li>
@@ -22,27 +23,31 @@
 <p><img alt="z_DRIP_GRUNGE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_DRIP_GRUNGE/z_DRIP_GRUNGE.jpg?raw=true" title="z_DRIP_GRUNGE" /></p>
 <h1>z_GEN_REVOLVE_BASIC</h1>
 <ul>
-<li>creates revolved mesh , path deformed by backbone curve , input profile and backbone curves . handles profile centering by curve bounds , useful when creating mesh curves in level locations away from 0,0,0 .  </li>
+<li>creates revolved mesh , path deformed by backbone curve , input profile and backbone curves . </li>
+<li>handles profile centering by curve bounds , useful when creating mesh curves in level locations away from 0,0,0 .  </li>
 </ul>
 <p><img alt="z_GEN_REVOLVE_BASIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_REVOLVE_BASIC/z_GEN_REVOLVE_BASIC.jpg?raw=true" title="z_GEN_REVOLVE_BASIC" /></p>
 <h1>z_GEN_STAIRWAY</h1>
-<p>generate stairway made of bricks </p>
+<p>generate stairway made of stone bricks , from input curve or ramp parameter </p>
+<p><img alt="z_GEN_STAIRWAY" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STAIRWAY/z_GEN_STAIRWAY_tool.jpg?raw=true" title="z_GEN_STAIRWAY_tool" /></p>
 <p><img alt="z_GEN_STAIRWAY" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STAIRWAY/z_GEN_STAIRWAY_B.jpg?raw=true" title="z_GEN_STAIRWAY" /></p>
 <p><img alt="z_GEN_STAIRWAY" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STAIRWAY/z_GEN_STAIRWAY.jpg?raw=true" title="z_GEN_STAIRWAY" /></p>
 <p><img alt="z_GEN_STAIRWAY" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STAIRWAY/z_GEN_STAIRWAY_nodes.jpg?raw=true" title="z_GEN_STAIRWAY" /></p>
 <h1>z_CURL_LINES_THEN_PLACE_SPIRALS</h1>
 <p>creates curllines on the surface of mesh then copies spirals to the geometry with collision detection</p>
+<p><img alt="z_CURL_LINES_THEN_PLACE_SPIRALS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURL_LINES_THEN_PLACE_SPIRALS/z_CURL_LINES_THEN_PLACE_SPIRALS.jpg?raw=true" title="z_CURL_LINES_THEN_PLACE_SPIRALS" /></p>
 <h1>z_GEN_CIRCLES_RADIATE_PATTERN</h1>
 <ul>
-<li>creates circular patterns inspired by asian design . scatter circles , then radiate those circles outward while avoiding intersection by order or generation . </li>
+<li>creates circular patterns inspired by asian design . scatters circles , then radiate those circles outward while avoiding intersection by order or generation . </li>
 </ul>
-<p><img alt="z_GEN_CIRCLES_RADIATE_PATTERN" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_CIRCLES_RADIATE_PATTERN/z_GEN_CIRCLES_RADIATE_PATTERN_thumb.jpg?raw=true" title="z_GEN_CIRCLES_RADIATE_PATTERN" /></p>
+<p><img alt="z_GEN_CIRCLES_RADIATE_PATTERN" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_CIRCLES_RADIATE_PATTERN/z_GEN_CIRCLES_RADIATE_PATTERN.jpg?raw=true" title="z_GEN_CIRCLES_RADIATE_PATTERN" /></p>
 <h1>z_GEN_STONE_BRICK_CIRCLE</h1>
 <ul>
 <li>generates a circular shaped brick section by evenly voronoi fracturing and extruding toward center .</li>
 <li>applies additional noise and separation to resemble stone surface</li>
 </ul>
 <p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
+<p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE_pillar.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
 <h1>z_HELIX_ALONG_CURVE</h1>
 <ul>
 <li>creates a helix curves along input curve  </li>
@@ -55,6 +60,7 @@
 </ul>
 <h1>z_GEN_RUNES</h1>
 <p>creates rune like symbols</p>
+<p><img alt="z_GEN_RUNES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_RUNES/z_GEN_RUNES.jpg?raw=true" title="z_GEN_RUNES" /></p>
 <h1>z_GEN_ROCK_THIRDS</h1>
 <p>creates a rock stylized by lot subdivision rule of thirds , setup for PDG</p>
 <p><img alt="z_GEN_ROCK_THIRDS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_ROCK_THIRDS/z_GEN_ROCK_THIRDS.jpg?raw=true" title="z_GEN_ROCK_THIRDS" /></p>
@@ -91,11 +97,22 @@
 <li>ideal for use with lattice deformer </li>
 </ul>
 <p><img alt="z_GEN_LATTICE_GRIDMESH" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_LATTICE_GRIDMESH/z_GEN_LATTICE_GRIDMESH.jpg?raw=true" title="z_GEN_LATTICE_GRIDMESH" /></p>
+<h1>z_GEN_HEXA_STRUCTURE</h1>
+<p>creates a hexagon support structure based on input mesh</p>
 <h1>z_PLANTS_HELIX_ROOTS</h1>
 <ul>
 <li>creates winding intertwined roots from an input guide line .</li>
 </ul>
 <p><img alt="z_PLANTS_HELIX_ROOTS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_HELIX_ROOTS/z_PLANTS_HELIX_ROOTS.jpg?raw=true" title="z_PLANTS_HELIX_ROOTS" /></p>
+<h1>z_PLANTS_FUNGI</h1>
+<p>creates a fungus mushroom mesh</p>
+<h1>z_PLANTS_LEAF</h1>
+<p>creates a hipoly leaf mesh</p>
+<p><img alt="z_PLANTS_LEAF" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_LEAF/z_PLANTS_LEAF.jpg?raw=true" title="z_PLANTS_LEAF" /></p>
+<h1>z_PLANTS_BARK</h1>
+<p>creates bark pieces for tree</p>
+<h1>z_PLANTS_BARK_PLACER</h1>
+<p>layout bark on mesh surface guided by curves , smooth aligned , used with tree </p>
 <h1>z_PLANTS_PETAL_FORM</h1>
 <ul>
 <li>generates petal from curve backbone and multiple warped elipse curves defining the shape changes over the length of the backbone </li>
@@ -108,29 +125,50 @@
 </ul>
 <p><img alt="z_PLANTS_VINES_W_LEAVES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_VINES_W_LEAVES/z_PLANTS_VINES_W_LEAVES.jpg?raw=true" title="z_PLANTS_VINES_W_LEAVES" /></p>
 <ul>
-<li>z_PLANTS_VINES_W_LEAVES.hda in unreal 4 houdini engine , leaves input from static mesh </li>
+<li>z_PLANTS_VINES_W_LEAVES.hda in unreal 4 houdini engine , leaves instances input from static mesh </li>
 </ul>
+<p><img alt="z_PLANTS_VINES_W_LEAVES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_VINES_W_LEAVES/z_PLANTS_VINES_W_LEAVES_02.jpg?raw=true" title="z_PLANTS_VINES_W_LEAVES_02" /></p>
 <h1>z_PLANTS_MOSS_HANGING</h1>
 <p>creates hanging placements of moss mesh , leaves , spirals . placed onto input mesh .</p>
 <p><img alt="z_PLANTS_MOSS_HANGING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_MOSS_HANGING/z_PLANTS_MOSS_HANGING.jpg?raw=true" title="z_PLANTS_MOSS_HANGING" /></p>
 <h1>z_PLANTS_VINES_GUIDED</h1>
 <p>generate a vine tube using a wandering path finder guided variably by a curve or direction vector</p>
 <h1>z_PLANTS_SCATTER_LEDGE</h1>
-<p>layouts hanging plants aligned along edges of input mesh with collision checks</p>
+<p>places hanging plants instances aligned along edges of input mesh with collision checks</p>
+<p><img alt="z_PLANTS_SCATTER_LEDGE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_SCATTER_LEDGE/z_PLANTS_SCATTER_LEDGE.jpg?raw=true" title="z_PLANTS_SCATTER_LEDGE" /></p>
 <h1>z_PLANTS_TREE_PATHFIND</h1>
 <p>generate a tree using shortest path thru curves scattered and connected around collision objects and previous tree roots</p>
+<p><img alt="z_PLANTS_TREE_PATHFIND" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_TREE_PATHFIND/z_PLANTS_TREE_PATHFIND.jpg?raw=true" title="z_PLANTS_TREE_PATHFIND" /></p>
 <h1>z_ITEM_ABILITY_ICON</h1>
 <p>creates an icon of ability , setup for TOPs randomization to generate dataset</p>
 <p><img alt="z_ITEM_ABILITY_ICON" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_ABILITY_ICON/gen_ability_icon_pdg_02.jpg?raw=true" title="z_ITEM_ABILITY_ICON" /></p>
 <p><img alt="z_ITEM_ABILITY_ICON" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_ABILITY_ICON/gen_icon_procgen_comp.jpg?raw=true" title="z_ITEM_ABILITY_ICON" /></p>
+<h1>z_ITEM_POTION</h1>
+<p>creates variety of potion items in TOPS by wedgenum</p>
 <h1>z_ITEM_RING</h1>
 <p>creates variety of ring items , helix , diffusion tubes , rock gemstones ,  setup for TOPs randomization by wedgenum .</p>
 <p><img alt="z_ITEM_RING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/item_ring_procgen.jpg?raw=true" title="z_ITEM_RING" /></p>
 <p><img alt="z_ITEM_RING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/item_ring_pdgA_comp.jpg?raw=true" title="z_ITEM_RING" /></p>
 <h1>z_ITEM_RING_FROM_IMAGE</h1>
 <p>creates a projected 3d ring from isometric image , setup for TOPs processing folder of images to 3d relit renders</p>
+<p><img alt="z_ITEM_RING_FROM_IMAGE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING_FROM_IMAGE/z_ITEM_RING_FROM_IMAGE.jpg?raw=true" title="z_ITEM_RING_FROM_IMAGE" /></p>
+<p>in this example , isometric ring images mutated by text-to-image guided alteration ( VQGAN+CLIP ) are the input , projected into 3d and rendered with consitent lighting </p>
+<h1>z_ITEM_SWORD</h1>
+<p>creates sword item variants</p>
+<h1>z_ITEM_HELM</h1>
+<p>creates variety of helm items in TOPS by wedgenum</p>
+<h1>z_ITEM_POTION</h1>
+<p>creates variety of potion items in TOPS by wedgenum</p>
+<h1>z_ITEM_BOW</h1>
+<p>creates bow item variants</p>
 <h1>z_ITEM_SWORD_FROM_IMAGE</h1>
 <p>creates a sword mesh from image , traces png alpha  , orients vertically , thickens from center skeleton line , sets uvs to match image , bakes colors to vertex colors</p>
+<h1>z_ITEM_HELM_FROM_IMAGE</h1>
+<p>projects a helm mesh from image </p>
+<h1>z_ITEM_POTION_FROM_IMAGE</h1>
+<p>creates 3d potion from image</p>
+<h1>z_PATH_REVIEW</h1>
+<p>layout path based meshes to review their connections</p>
 <h1>z_PATH_BASE</h1>
 <ul>
 <li>create a path floor section and collision for gameplay , creates directional variants for snapmap . this is the basis for all other path generation </li>
@@ -167,8 +205,11 @@
 <li>copy by piecenum to dynamic evenly spaced grid - useful when baking and review</li>
 </ul>
 <p><img alt="z_COPY_TO_EVENLY_DISTRIBUTED_GRID" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COPY_TO_EVENLY_DISTRIBUTED_GRID/z_COPY_TO_EVENLY_DISTRIBUTED_GRID.jpg?raw=true" title="z_COPY_TO_EVENLY_DISTRIBUTED_GRID" /></p>
-<h1>z_TILE_4m</h1>
-<p>copies input to each of the nearby quadrants preview tiling ( 4m default )</p>
+<h1>z_TILEABLE</h1>
+<ul>
+<li>copies input to each of the nearby quadrants preview tiling ( 4m default )</li>
+</ul>
+<p><img alt="z_TILEABLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_TILEABLES/z_TILEABLE.jpg?raw=true" title="z_TILEABLE" /></p>
 <h1>z_TRANSFORM_ITERATE_COLLISION_CHECK</h1>
 <ul>
 <li>iteratively move pieces towards nearest goal while avoid itersection with collision ( an iterative simplified gravity / attraction sop based )</li>
@@ -218,7 +259,7 @@
 <ul>
 <li>boolean subtract chipping and crack meshes onto the surface based on curvature and fit projecting the crack meshes .</li>
 </ul>
-<p><img alt="z_MESH_CHIP_CRACKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_CHIP_CRACKED/z_MESH_CHIP_CRACKED.jpg?raw=true" title="z_MESH_CHIP_CRACKED" /></p>
+<p><img alt="z_MESH_CHIP_CRACKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_CHIP_CRACK/z_MESH_CHIP_CRACK.jpg?raw=true" title="z_MESH_CHIP_CRACKED" /></p>
 <h1>z_CONFORM_INTERSECTING_LERP</h1>
 <ul>
 <li>input mesh is conformed around a given colllision object if is intersecting</li>
@@ -235,8 +276,6 @@
 <li>useful for cutting runes , designs , cracks into bricks</li>
 </ul>
 <p><img alt="z_STAMP_FOREACH_PIECE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_STAMP_FOREACH_PIECE/z_STAMP_FOREACH_PIECE.jpg?raw=true" title="z_STAMP_FOREACH_PIECE" /></p>
-<h1>z_SMOOTHING_FROM_UVs</h1>
-<p>hard edges by uv island  for baking </p>
 <h1>z_SPLIT_CLIP_CREVISE</h1>
 <p>separate the input into two outputs with an indent along the separation , useful separating environment shell into terraced layers</p>
 <h1>z_CUT_INTERSECT_DARKEN</h1>
@@ -269,7 +308,10 @@
 <img alt="z_UV_AXIS_ALIGN_SNAP" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_UV_AXIS_ALIGN_SNAP/z_UV_AXIS_ALIGN_SNAP.jpg?raw=true" title="z_UV_AXIS_ALIGN_SNAP" /></li>
 </ul>
 <h1>z_UV_ALIGN_WORLD</h1>
-<p>align uv islands to world axis </p>
+<ul>
+<li>align uv islands to world axis </li>
+</ul>
+<p><img alt="z_UV_ALIGN_WORLD" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_UV_ALIGN_WORLD/z_UV_ALIGN_WORLD.jpg?raw=true" title="z_UV_ALIGN_WORLD" /></p>
 <h1>z_UV_OVERLAP_CHECK</h1>
 <p>a slow tho absolute uv overlap check , by intersection checks , separates all overlaping prims, then repacks</p>
 <h1>z_UV_TEXEL_DENSITY_CHECK</h1>
@@ -284,21 +326,10 @@
 <p>fits uvs into specific trim sheet area while scaling the pieces along an axis relative to their world space</p>
 <h1>z_LIGHTMAP_UV_GEN</h1>
 <p>UVs creation for lightmaps , stored to uv1 with higher merge threshold </p>
-<h1>z_COLLISION_INTERSECT_CHECK</h1>
-<p>detect and show intersections with provided collision geometry . useful to avoid clipping into level geometry beyond a specific distance threshold </p>
-<h1>z_TEX_SEAM_BLENDER</h1>
-<p>blend and blur a texture across uv seams to fix small bake errors and make seamless , additionally blending intersections of the meshes when surface details do not share a uvseam edge .. this is WIP bruteforce approach dividing the mesh by texel density and transfering the colors to vertexcolor bluring in worldspace proximity lastly adding in some noise counteract the blur .</p>
-<h1>z_VFX_SLASH_from_ANIM</h1>
-<p>create a smoothed  swipe mesh for vfx , sword slashing</p>
-<h1>z_CAM_ISOMETRIC</h1>
-<ul>
-<li>camera with crane\boom arm setup matching isometric game settings</li>
-</ul>
-<p><img alt="z_CAM_ISOMETRIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CAM_ISOMETRIC/z_CAM_ISOMETRIC.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
-<h1>z_CAM_PROJECTION_fspy</h1>
-<p>a wrapper for fspy hda created  by floodini , input fspy json creating camera matching ref image perspective then project that image to floor plane</p>
 <h1>z_VDB_INTERNAL_FILL</h1>
 <p>mesh to vdb to mesh , combines multiple lower res vdb's that are eroded to fill in the internal spaces</p>
+<h1>z_VOXEL_AUTOSIZE</h1>
+<p>auto voxel resolution for target polycount , safely lowers resolution on large objects</p>
 <h1>z_EDGEGROUP_BY_UV_AXIS</h1>
 <ul>
 <li>edgegroup based on axis of uvs , useful for polybeveling specific edges procedurally</li>
@@ -306,6 +337,7 @@
 <p><img alt="z_EDGEGROUP_BY_UV_AXIS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_EDGEGROUP_BY_UV_AXIS/z_EDGEGROUP_BY_UV_AXIS.jpg?raw=true" title="z_EDGEGROUP_BY_UV_AXIS" /></p>
 <h1>z_POLYBEVEL_SAFE</h1>
 <p>polybevel with fix for exploding points</p>
+<p><img alt="z_POLYBEVEL_SAFE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_POLYBEVEL_SAFE/z_POLYBEVEL_SAFE.jpg?raw=true" title="z_POLYBEVEL_SAFE" /></p>
 <h1>z_SHRINKWRAP_VORONOI_CLUSTERS</h1>
 <ul>
 <li>similar to convex decomposition , cuts mesh into pieces via voronoi , shrinkwraps those pieces . useful for rocky shapes
@@ -326,6 +358,7 @@
 </ul>
 <h1>z_REMESH_RAY_SPHERE</h1>
 <p>remesh using sphere around object , iteratively raycast and smooth to approximate shape</p>
+<p><img alt="z_REMESH_RAY_SPHERE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_REMESH_RAY_SPHERE/z_REMESH_RAY_SPHERE.jpg?raw=true" title="z_REMESH_RAY_SPHERE" /></p>
 <h1>z_CURVE_FROM_TUBE</h1>
 <ul>
 <li>input a mesh , outputs a centered curve within the mesh , even if the topology is highly irregular</li>
@@ -342,3 +375,60 @@
 <p><img alt="z_MASK_TO_LINE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MASK_TO_LINE/z_MASK_TO_LINE.jpg?raw=true" title="z_MASK_TO_LINE" /></p>
 <h1>z_SORT_BY_LINEAXIS</h1>
 <p>sorts a line contigously linearly along axis , enforcing a point order on a curved line when sort by axis may skip around</p>
+<h1>z_COLOR_MASK_VERTEX</h1>
+<p><img alt="z_COLOR_MASK_VERTEX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX_variants.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
+<h2>VARIANTS VERTEX COLORS</h2>
+<p>RGB vertex color setup for variations , example stone brick structure .
+- 0 = base 
+- R = vertical gradient
+- G = occlusion grunge
+- B = random per element</p>
+<p>example :
+stone base material ( 0 ) darkened by vertical gradient ( R ) ,  blending dirt in crevices ( G ) , randomly altering the brightness per brick by ( B ) .</p>
+<p>//==================================================================================</p>
+<p><img alt="z_COLOR_MASK_VERTEX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_MASK_VERTEX/z_COLOR_MASK_VERTEX_water_proximity.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
+<h2>LAYERED VERTEX COLORS</h2>
+<p>RGB vertex color setup for material blending on environment meshes .
+- 0 = occlusion
+- R = base
+- G = direction vector 
+- B = secondary mesh proximity </p>
+<p>example :
+dirt in crevices ( 0 ) of rock ( R ) ,  with moss on top ( G ) , near water ( B ) .</p>
+<h1>z_COLOR_NOISE_HI</h1>
+<ul>
+<li>vertex colors based on multiple ramps driven by curvature , occlusion , and noise </li>
+<li>default stone preset</li>
+</ul>
+<p><img alt="z_COLOR_NOISE_HI" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_NOISE_HI/z_COLOR_NOISE_HI.jpg?raw=true" title="z_COLOR_NOISE_HI" /></p>
+<h1>z_COLOR_LINES_SCRATCH_VTX</h1>
+<p>cuts in elipses to geo and applys vertex colors for stratches along an axis</p>
+<p><img alt="z_COLOR_LINES_SCRATCH_VTX" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COLOR_LINES_SCRATCH_VTX/z_COLOR_LINES_SCRATCH_VTX.jpg?raw=true" title="z_COLOR_MASK_VERTEX" /></p>
+<h1>z_VERTEXCOLOR_CONVERT</h1>
+<p>converts standard rgb vertex color blending to multilayer vertex blending with alpha</p>
+<h1>z_UDIM_CONVERT</h1>
+<p>convert single material UDIM to multiple materials , and reposition the uvs into zero to one for precision</p>
+<p><img alt="z_UDIM_CONVERT" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_UDIM_CONVERT/z_UDIM_CONVERT.jpg?raw=true" title="z_UDIM_CONVERT" /></p>
+<h1>z_NORMAL_AREA_WEIGHTED</h1>
+<p>normals smoothed face area weighted alternative</p>
+<h1>z_SMOOTHING_FROM_UVs</h1>
+<p>hard edges by uv island  for baking </p>
+<h1>z_COLLISION_INTERSECT_CHECK</h1>
+<p>detect and show intersections with provided collision geometry . useful to avoid clipping into level geometry beyond a specific distance threshold </p>
+<h1>z_TEX_SEAM_BLENDER</h1>
+<p>blend and blur a texture across uv seams to fix small bake errors and make seamless , additionally blending intersections of the meshes when surface details do not share a uvseam edge .. this is WIP bruteforce approach dividing the mesh by texel density and transfering the colors to vertexcolor bluring in worldspace proximity lastly adding in some noise counteract the blur .</p>
+<h1>z_VFX_SLASH_from_ANIM</h1>
+<p>create a smoothed  swipe mesh for vfx , sword slashing</p>
+<h1>z_CAM_ISOMETRIC</h1>
+<ul>
+<li>camera with crane\boom arm setup matching isometric game settings</li>
+</ul>
+<p><img alt="z_CAM_ISOMETRIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CAM_ISOMETRIC/z_CAM_ISOMETRIC.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
+<h1>z_CAM_PROJECTION_fspy</h1>
+<p>a wrapper for fspy hda created  by floodini , input fspy json creating camera matching ref image perspective then project that image to floor plane</p>
+<p>nLib fspy_loader = https://github.com/Njordy/nLib</p>
+<h1>z_EXPORT_TO_UNREAL</h1>
+<p>common settings used before exporting fbx to unreal , material parameter conversion , point color to vtx conversion
+. scale and rotation</p>
+<h1>z_EXPORT_MAYA_FBX</h1>
+<p>applies specific detail parameters for maya - named uv channels , named color sets for vertex colors , uv1 to uv2 , preps for export to fbx </p>
