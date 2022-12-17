@@ -2,10 +2,12 @@ from pathlib import Path
 from svgtrace import trace
 import glob
 import os
+import random
 
 rootdir = os.path.dirname(os.path.abspath(__file__))
 png_images = glob.glob(os.path.join(rootdir, "*.png"))
 print(png_images)
+random.shuffle(png_images)
 for current_png_image in png_images:
     print(current_png_image)
     output_name = Path(current_png_image).stem + ".svg"

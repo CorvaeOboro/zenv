@@ -4,4 +4,4 @@ creates variety of ring items , helix , diffusion tubes , rock gemstones ,  setu
 
 ![z_ITEM_RING](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/item_ring_procgen.jpg?raw=true "z_ITEM_RING")
 
-![z_ITEM_RING](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/item_ring_pdgA_comp.jpg?raw=true "z_ITEM_RING")
+![z_ITEM_RING](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/z_ITEM_RING.jpg?raw=true "z_ITEM_RING")
