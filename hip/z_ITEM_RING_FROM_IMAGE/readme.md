@@ -1,6 +1,5 @@
 # z_ITEM_RING_FROM_IMAGE
-
-creates a projected 3d ring from isometric image , setup for TOPs processing folder of images to 3d relit renders
+- creates a projected 3d ring from isometric image , setup for TOPs processing folder of images to 3d relit renders
 
 ![z_ITEM_RING_FROM_IMAGE](https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING_FROM_IMAGE/z_ITEM_RING_FROM_IMAGE.jpg?raw=true "z_ITEM_RING_FROM_IMAGE")
 

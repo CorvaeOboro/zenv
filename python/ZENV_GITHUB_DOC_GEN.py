@@ -74,6 +74,88 @@ def git_clone_zenv():
 
 
 #//==================================================================================================
+#// UPDATE GSHEET
+#//==================================================================================================
+#//   ADD NEW FROM GITHUB TO GSHEET
+#//====== GET NAMES FROM GITHUB , FOR EACH CHECK GHSSET for MATCH , IF NEW THEN ADD TO GSHEET AS NEW ROW  =======================================
+def gsheet_update_zenv(workbook,df):
+  new_offset = 200
+  df = df.replace('', np.nan)
+  total_columns = len(df.columns)
+  sheet = workbook.worksheet('HDA')
+
+  print (total_columns)
+  values_list = sheet.row_values(1)
+  print (values_list)
+  name_index = values_list.index("NAME")
+  datemodified_index = values_list.index("DATE_MODIFIED")
+
+  EX_index = values_list.index("EX")
+  EX_values_list = sheet.col_values(EX_index+1)
+  IMG_index = values_list.index("IMG")
+  IMG_values_list = sheet.col_values(IMG_index+1)
+
+  print ("NAME INDEX = " + str(name_index))
+  print ("DATMODIFIED INDEX = " + str(datemodified_index))
+  name_values_list = sheet.col_values(name_index+1)
+  print (name_values_list)
+
+  #//=============================================
+  iteration= 0
+  name_iteration = 0
+  for subdir, dirs, files in os.walk(repo_dir):
+      for file in files:
+          iteration += +1
+          filepath = subdir + os.sep + file
+          filename_string = str(file)
+
+          if filepath.endswith(".hda"):
+            name_iteration = 0
+            name_exists = 0
+            filename_found_string = "null"
+            for i in name_values_list:
+              current_name = name_values_list[name_iteration]
+              name_iteration += 1
+              if current_name.endswith(filename_string):
+                name_exists = 1
+                filename_found_string = filename_string
+            if name_exists < 1 :
+              print ("UNIQUE HDA FOUND ===   " + filename_string )
+              sheet.update_cell((iteration+new_offset),(name_index+1), filename_string) # Update using cell coordinates
+  # HIP check if image , check if hip
+  #//=============================================
+  name_iteration = 0
+  for i in name_values_list:
+    print(i)
+    current_name = name_values_list[name_iteration]
+    if current_name.endswith(".hda"):
+      iteration= 0
+      for subdir, dirs, files in os.walk(rootdir):
+        for file in files:
+            iteration += 1
+            filepath = subdir + os.sep + file
+            filename_only = pathlib.Path(filepath).stem
+            if filename_only in current_name:
+              if filepath.endswith(".hip"):
+                #EXAMPLE EXISTS
+                sheet.update_cell((name_iteration+1),(EX_index+1), "1") # Update DATEMODIFIED
+                print("EX FOUND = " + str(filename_only))
+                time.sleep(1) # this is slow but neccesary currently due to the network request limit perhaps a better lib or way
+              if filepath.endswith(".jpg"):
+                #EXAMPLE EXISTS
+                sheet.update_cell((name_iteration+1),(IMG_index+1), "1") # Update DATEMODIFIED
+                print("IMG FOUND = " + str(filename_only))
+                time.sleep(1) # this is slow but neccesary currently due to the network request limit perhaps a better lib or way
+
+    name_iteration += 1
+
+
+
+
+
+
+
+#//==================================================================================================
 #// README MAIN
 #//==================================================================================================
 def gen_readme_main(workbook,df):
@@ -924,14 +1006,17 @@ def convert_readme_main_to_html():
 #//==================================================================================================
 gc = auth_gsheet_zenv()
 workbook , df = get_gsheet_zenv(gc)
-#git_clone_zenv()
+git_clone_zenv()
+
+gsheet_update_zenv(workbook,df)
 
 #gen_readme_main(workbook,df)
 #gen_readme_combined(workbook,df)
 #gen_website_menu(workbook,df)
+
 #convert_readme_to_html()
 #convert_readme_main_to_html()
 
-readme_all_txtfile = str(output_dir) + 'readme_all.md'
-readme_all_html_output =  str(output_dir) + 'readme_all_html.html'
-markdown.markdownFromFile(input=readme_all_txtfile, output=readme_all_html_output)
+#readme_all_txtfile = str(output_dir) + 'readme_all.md'
+#readme_all_html_output =  str(output_dir) + 'readme_all_html.html'
+#markdown.markdownFromFile(input=readme_all_txtfile, output=readme_all_html_output)
