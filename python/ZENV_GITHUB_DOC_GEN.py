@@ -1001,6 +1001,34 @@ def convert_readme_main_to_html():
   #files.download("/content/zenv/docs/zenv_README.html")
   print("+++++++++++ COMPLETED CONVERTING README  MAIN to HTMLs +++++++++++++")
 
+def convert_readme_all_to_html():
+  print("=== CONVERTING README ALL HTML ===")
+  readme_all_txtfile = str(output_dir) + 'readme_all.md'
+  readme_all_html_output =  str(output_dir) + 'readme_all_html.html'
+  markdown.markdownFromFile(input=readme_all_txtfile, output=readme_all_html_output)
+
+def fix_main_readme_html():
+  print("=== FIX MAIN README HTML ===")
+  # TODO convert links to local /hip (find/replace), convert image src of icons to githubcontent path (find/replace)
+  # TODO remove the table row that contains markdown alignment example = :--- :---: , remove first row ____ padding
+  readme_zenv_html_output =  str(output_dir) + 'zenv_README.html'
+  
+  html_extra_table_rows = '''  
+  <tr>
+  <td style="text-align: left;">______</td>
+  <td style="text-align: left;"></td>
+  <td style="text-align: left;"></td>
+  </tr>
+  <tr>
+  <td style="text-align: left;">:---</td>
+  <td style="text-align: left;">:---</td>
+  <td style="text-align: left;">:---</td>
+  </tr>'''
+  html_ahref_links_start = '''a href="https://github.com/corvaeoboro/zenv/tree/master/hip'''
+  html_ahref_links_replace = '''a href="hip'''
+  html_img_src_start = '''img src="'''
+  html_img_src_replace = '''img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon'''
+
 #//==================================================================================================
 #// MAIN - auth gsheet git , generate readme and html docs
 #//==================================================================================================
@@ -1008,15 +1036,17 @@ gc = auth_gsheet_zenv()
 workbook , df = get_gsheet_zenv(gc)
 git_clone_zenv()
 
+# gsheet update data 
 gsheet_update_zenv(workbook,df)
 
-#gen_readme_main(workbook,df)
-#gen_readme_combined(workbook,df)
-#gen_website_menu(workbook,df)
+# generate readme
+gen_readme_main(workbook,df)
+gen_readme_combined(workbook,df)
+gen_website_menu(workbook,df)
 
-#convert_readme_to_html()
-#convert_readme_main_to_html()
+# convert to html
+convert_readme_to_html()
+convert_readme_main_to_html()
+convert_readme_all_to_html()
+fix_main_readme_html()
 
-#readme_all_txtfile = str(output_dir) + 'readme_all.md'
-#readme_all_html_output =  str(output_dir) + 'readme_all_html.html'
-#markdown.markdownFromFile(input=readme_all_txtfile, output=readme_all_html_output)
