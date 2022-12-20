@@ -1,4 +1,4 @@
-# ZENV PYTHON SCRITPS
+# ZENV PYTHON SCRIPTS
 
 - [HOUDINI_HDA_PLACE_ALL.py]( https://github.com/CorvaeOboro/zenv/tree/master/python#houdini_hda_place_allpy) = for each hda in a folder creates hython script to place the nodes in houdini 
 - [HOUDINI_PATH_TOPs_CREATE_SET.py]( https://github.com/CorvaeOboro/zenv/tree/master/python#houdini_path_tops_create_setpy) = creates hython script to place TOP nodes for each PATH mesh component
