@@ -1,9 +1,9 @@
 # ZENV PYTHON SCRITPS
 
-- [HOUDINI_HDA_PLACE_ALL.py]( https://github.com/CorvaeOboro/zenv/python#HOUDINI_HDA_PLACE_ALL.py) = for each hda in a folder creates hython script to place the nodes in houdini 
-- [HOUDINI_PATH_TOPs_CREATE_SET.py]( https://github.com/CorvaeOboro/zenv/python#HOUDINI_PATH_TOPs_CREATE_SET.py) = creates hython script to place TOP nodes for each PATH mesh component
-- [UNREAL_PATH_CREATE_SNAPMAPS.py]( https://github.com/CorvaeOboro/zenv/python#UNREAL_PATH_CREATE_SNAPMAPS.py) = for each set of PATH meshes creates unreal map for each corresponding variant
-- [ZENV_GITHUB_DOC_GEN.py]( https://github.com/CorvaeOboro/zenv/python#ZENV_GITHUB_DOC_GEN.py) = creates readme and docs from googlesheet and existing files 
+- [HOUDINI_HDA_PLACE_ALL.py]( https://github.com/CorvaeOboro/zenv/python#HOUDINI_HDA_PLACE_ALLpy) = for each hda in a folder creates hython script to place the nodes in houdini 
+- [HOUDINI_PATH_TOPs_CREATE_SET.py]( https://github.com/CorvaeOboro/zenv/python#HOUDINI_PATH_TOPs_CREATE_SETpy) = creates hython script to place TOP nodes for each PATH mesh component
+- [UNREAL_PATH_CREATE_SNAPMAPS.py]( https://github.com/CorvaeOboro/zenv/python#UNREAL_PATH_CREATE_SNAPMAPSpy) = for each set of PATH meshes creates unreal map for each corresponding variant
+- [ZENV_GITHUB_DOC_GEN.py]( https://github.com/CorvaeOboro/zenv/python#ZENV_GITHUB_DOC_GENpy) = creates readme and docs from googlesheet and existing files 
 
 ## HOUDINI_HDA_PLACE_ALL.py
 - for each .hda in a target folder creates hython script to place the nodes in houdini 
