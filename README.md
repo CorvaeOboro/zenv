@@ -194,10 +194,10 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_EXPORT_MAYA_FBX"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_EXPORT_MAYA_FBX_icon.png" width = "40" height = "40"/></a>| **[z EXPORT MAYA FBX](https://github.com/corvaeoboro/zenv/tree/master/hip/z_EXPORT_MAYA_FBX)**|applies specific detail parameters for maya - named uv channels , named color sets for vertex colors , uv1 to uv2 , preps for export to fbx|
 
 ## PYTHON ##
-- [HOUDINI_HDA_PLACE_ALL.py]( https://github.com/CorvaeOboro/zenv/python#HOUDINI_HDA_PLACE_ALLpy) = for each hda in a folder creates hython script to place the nodes in houdini 
-- [HOUDINI_PATH_TOPs_CREATE_SET.py]( https://github.com/CorvaeOboro/zenv/python#HOUDINI_PATH_TOPs_CREATE_SETpy) = creates hython script to place TOP nodes for each PATH mesh component
-- [UNREAL_PATH_CREATE_SNAPMAPS.py]( https://github.com/CorvaeOboro/zenv/python#UNREAL_PATH_CREATE_SNAPMAPSpy) = for each set of PATH meshes creates unreal map for each corresponding variant
-- [ZENV_GITHUB_DOC_GEN.py]( https://github.com/CorvaeOboro/zenv/python#ZENV_GITHUB_DOC_GENpy) = creates readme and docs from googlesheet and existing files 
+- [HOUDINI_HDA_PLACE_ALL.py]( https://github.com/CorvaeOboro/zenv/tree/master/python#houdini_hda_place_allpy) = for each hda in a folder creates hython script to place the nodes in houdini 
+- [HOUDINI_PATH_TOPs_CREATE_SET.py]( https://github.com/CorvaeOboro/zenv/tree/master/python#houdini_path_tops_create_setpy) = creates hython script to place TOP nodes for each PATH mesh component
+- [UNREAL_PATH_CREATE_SNAPMAPS.py]( https://github.com/CorvaeOboro/zenv/tree/master/python#unreal_path_create_snapmapspy) = for each set of PATH meshes creates unreal map for each corresponding variant
+- [ZENV_GITHUB_DOC_GEN.py]( https://github.com/CorvaeOboro/zenv/tree/master/python#zenv_github_doc_genpy) = creates readme and docs from googlesheet and existing files 
 
 ## RECOMMENDED LIBRARIES ##
 - SideFXLabs	**[https://github.com/sideeffects/SideFXLabs](https://github.com/sideeffects/SideFXLabs)** 
