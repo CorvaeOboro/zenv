@@ -14,11 +14,14 @@ OBJ_PATH = '''/obj/PATH/'''
 start = '''obj = hou.node("/obj/")'''
 OBJ_start = '''OBJ_start = hou.node("/obj/PATH/")'''
 TOP_start = '''TOP_start = hou.node("/obj/topnet1/")'''
+WEDGE_start = '''WEDGE_start = hou.node("/obj/topnet1/wedge1")'''
 print(OBJ_start)
 textfile_output.write(OBJ_start) #START
 textfile_output.write('\n') # newline
 print(TOP_start)
 textfile_output.write(TOP_start) #START
+textfile_output.write('\n') # newline
+textfile_output.write(WEDGE_start) #START
 textfile_output.write('\n') # newline
 PATH_set = "BASE"
 PATH_type = "TURN"
@@ -65,6 +68,7 @@ HDA_Base_Path = HDA_Path + "z_PATH_BASE.hda"
 HDA_Ledge_Path = HDA_Path + "z_PATH_LEDGE.hda"
 HDA_Ledge_Pools_Path = HDA_Path + "z_PATH_LEDGE_POOLS.hda"
 HDA_Ledge_Preview_Path = HDA_Path + "z_PATH_LEDGE_POOLS.hda"
+HDA_Ledge_Forest_Path = HDA_Path + "z_PATH_LEDGE_FOREST.hda"
 
 PATH_LEDGEDIR_ARRAY = ["U","D","R","L"]
 PATH_LEDGEDIRU_ARRAY = ["30","-60","-30","60"]
@@ -80,7 +84,8 @@ PATH_DIR_ARRAY = numpy.concatenate(( PATH_DIR_ARRAY , PATH_DIR_START_ARRAY , PAT
 #PATH_DIR_ARRAY = PATH_DIR_END_ARRAY # end only
 #print(PATH_DIR_ARRAY)
 #PATH_LEDGE_SET_ARRAY = ["LEDGECLIFF","LEDGECAVESTALAG","LEDGEFOREST","DIFFREACTION","POOLS","PREVIEW"]
-PATH_LEDGE_SET_ARRAY = ["PREVIEW"]
+#PATH_LEDGE_SET_ARRAY = ["PREVIEW"]
+PATH_LEDGE_SET_ARRAY = ["LEDGEFOREST"]
 #//========================================================================
 
 MAIN_set_ARRAY = []
@@ -122,11 +127,12 @@ def create_tops_code_gen(createnodes , connectnodes) :
   MAIN_set_ARRAY_short =  list(set(MAIN_set_ARRAY))
   if ( createnodes == True ):
     for current_PATH_set in MAIN_set_ARRAY_short :
-      TOP_WaitNODE_name = current_PATH_set + "_HDA_wait"
-      TOPWAITNODE_create_final = TOP_WaitNODE_name + TOPWAITNODE_create_start + PYNODE_param_quotes + TOP_WaitNODE_name + PYNODE_param_quotes + TOPWAITNODE_create_end
-      print(TOPWAITNODE_create_final)
-      textfile_output.write(TOPWAITNODE_create_final) #START
-      textfile_output.write('\n') # newline
+      for PATH_ledgedir in PATH_LEDGEDIR_ARRAY :
+        TOP_WaitNODE_name = current_PATH_set + "_" + PATH_ledgedir + "_HDA_wait"
+        TOPWAITNODE_create_final = TOP_WaitNODE_name + TOPWAITNODE_create_start + PYNODE_param_quotes + TOP_WaitNODE_name + PYNODE_param_quotes + TOPWAITNODE_create_end
+        print(TOPWAITNODE_create_final)
+        textfile_output.write(TOPWAITNODE_create_final) #START
+        textfile_output.write('\n') # newline
 
   set_top_count = 0
   for current_PATH_set in MAIN_set_ARRAY_short :
@@ -142,13 +148,14 @@ def create_tops_code_gen(createnodes , connectnodes) :
         TOP_NODE_name = PATH_name + "_TOP_export"
         HDA_NODE_name = current_PATH_set + "_" + PATH_ledgedir + "_" + PATH_typedir + "_HDA"
         TOP_PARAM_name = OBJ_PATH + PATH_name + "_export" 
-        TOP_WaitNODE_name = current_PATH_set + "_HDA_wait"
+        TOP_WaitNODE_name = current_PATH_set + "_" + PATH_ledgedir + "_HDA_wait"
         
         if ( createnodes == True ):
           HDANODE_create_final = HDA_NODE_name + HDANODE_create_start + PYNODE_param_quotes + HDA_NODE_name + PYNODE_param_quotes + HDANODE_create_end
           print(HDANODE_create_final)
           textfile_output.write(HDANODE_create_final) #START
           textfile_output.write('\n') # newline
+          
         else :
           HDA_NODE_name_define = '''hou.node("/obj/topnet1/''' + HDA_NODE_name + '''")'''
           HDA_NODE_name_define_final = HDA_NODE_name + " = " + HDA_NODE_name_define
@@ -165,6 +172,8 @@ def create_tops_code_gen(createnodes , connectnodes) :
           HDA_Base_Path_current = HDA_Ledge_Pools_Path
         if ( current_PATH_set == "PREVIEW") :
           HDA_Base_Path_current = HDA_Ledge_Preview_Path
+        if ( current_PATH_set == "LEDGEFOREST") :
+          HDA_Base_Path_current = HDA_Ledge_Forest_Path
         HDANODE_HDAparam_final = HDA_NODE_name + NODE_param_start + PYNODE_param_quotes + "inputfile" + PYNODE_param_quotes + NODE_param_mid + PYNODE_param_quotes + HDA_Base_Path_current + PYNODE_param_quotes + NODE_param_end
         print(HDANODE_HDAparam_final)
         textfile_output.write(HDANODE_HDAparam_final) #START
@@ -261,6 +270,10 @@ def create_tops_code_gen(createnodes , connectnodes) :
           print(CONNECT_TOPWAITNODE_ROP)
           textfile_output.write(CONNECT_TOPWAITNODE_ROP) #START
           textfile_output.write('\n') # newline
+          CONNECT_WEDGENODE = HDA_NODE_name + ".setInput( " + "0" + " , "  + "WEDGE_start" + " )"
+          print(CONNECT_WEDGENODE)
+          textfile_output.write(CONNECT_WEDGENODE) #START
+          textfile_output.write('\n') # newline
         dir_top_count += 1
       ledgedir_top_count += 1
 
@@ -271,7 +284,7 @@ def create_tops_code_gen(createnodes , connectnodes) :
 # 1. CREATE NODOES - if false then only UPDATE parameters on existing
 # 2. CONNECT NODES
 #create_tops_code_gen(True,True)  
-create_tops_code_gen(False,False)  
+create_tops_code_gen(True,True)  
 
 time.sleep(2.0)
 textfile_output.close
