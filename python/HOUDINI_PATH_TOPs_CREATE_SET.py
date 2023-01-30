@@ -49,6 +49,7 @@ HDANODE_DIRparam_end = '''})'''
 HDANODE_STARTparam_start = '''.setParms({'hdap_SWITCH_START':'''
 HDANODE_STARTBparam_start = '''.setParms({'hdap_START':'''
 HDANODE_ENDparam_start = '''.setParms({'hdap_SWITCH_END':'''
+HDANODE_STRAIGHTparam_start = '''.setParms({'hdap_STRAIGHT':'''
 NODE_param_start = '''.setParms({'''
 NODE_param_mid = ''':'''
 NODE_param_end = '''})'''
@@ -75,13 +76,12 @@ HDA_Ledge_Forest_Path = HDA_Path + "z_PATH_LEDGE_FOREST.hda"
 
 PATH_LEDGEDIR_ARRAY = ["U","D","R","L"] # grouped such that the opposite is missing ( U = RLU , no down ) 
 PATH_LEDGEDIRU_ARRAY = ["30","-60","-30","60"]
-
 #PATH_LEDGEDIRD_ARRAY = ["30","-60","-30","60"]
 PATH_LEDGEDIRD_ARRAY = ["-30","60","30","-60"]
 PATH_LEDGEDIRR_ARRAY = ["60","-30","-60","30"]
-
 #PATH_LEDGEDIRL_ARRAY = ["60","-30","-60","30"]
 PATH_LEDGEDIRL_ARRAY = ["-60","30","60","-30"]
+
 
 # a list of the nodes that should be excluded from directinal groups , end piece directions are reversed
 PATH_LEDGEDIRU_ANTI_ARRAY = ["TURN_LD","TURN_DR","TURN_DL","TURN_RD","START_D","END_U"]
@@ -96,9 +96,11 @@ PATH_DIR_START_ARRAY = ["START_R","START_U","START_L","START_D"]
 PATH_DIR_START_ARRAY_NUM = ["0","1","2","3"]
 PATH_DIR_END_ARRAY = ["END_L","END_D","END_R","END_U"]
 PATH_DIR_END_ARRAY_NUM = ["0","1","2","3"]
+PATH_DIR_STRAIGHT_ARRAY = ["STRAIGHT_R","STRAIGHT_U","STRAIGHT_L","STRAIGHT_D"]
+PATH_DIR_STRAIGHT_ARRAY_NUM = ["0","1","2","3"]
 
-PATH_DIR_ARRAY = numpy.concatenate(( PATH_DIR_ARRAY , PATH_DIR_START_ARRAY , PATH_DIR_END_ARRAY ))
-PATH_DIR_ARRAY_NUM = numpy.concatenate(( PATH_DIR_ARRAY_NUM , PATH_DIR_START_ARRAY_NUM , PATH_DIR_END_ARRAY_NUM ))
+PATH_DIR_ARRAY = numpy.concatenate(( PATH_DIR_ARRAY , PATH_DIR_START_ARRAY , PATH_DIR_END_ARRAY ,PATH_DIR_STRAIGHT_ARRAY ))
+PATH_DIR_ARRAY_NUM = numpy.concatenate(( PATH_DIR_ARRAY_NUM , PATH_DIR_START_ARRAY_NUM , PATH_DIR_END_ARRAY_NUM ,PATH_DIR_STRAIGHT_ARRAY_NUM ))
 #PATH_DIR_ARRAY = PATH_DIR_END_ARRAY # end only
 #print(PATH_DIR_ARRAY)
 #PATH_LEDGE_SET_ARRAY = ["LEDGECLIFF","LEDGECAVESTALAG","LEDGEFOREST","DIFFREACTION","POOLS","PREVIEW"]
@@ -214,13 +216,13 @@ def create_tops_code_gen(createnodes , connectnodes) :
         textfile_output.write('\n') # newline
 
         # set BASE direction  ====================================================================================================
-        if ( current_PATH_set == "BASE") :
-          HDANODE_BASEDirparamX = HDA_NODE_name + HDANODE_BASEDIRXparam_start + PYNODE_param_quotes + str(30) + PYNODE_param_quotes + NODE_param_end
-          textfile_output.write(HDANODE_BASEDirparamX) #X
-          textfile_output.write('\n') # newline
-          HDANODE_BASEDirparamZ = HDA_NODE_name + HDANODE_BASEDIRZparam_start + PYNODE_param_quotes + str(30) + PYNODE_param_quotes + NODE_param_end
-          textfile_output.write(HDANODE_BASEDirparamZ) #X
-          textfile_output.write('\n') # newline
+        #if ( current_PATH_set == "BASE") :  # now moved into ledges as well
+        HDANODE_BASEDirparamX = HDA_NODE_name + HDANODE_BASEDIRXparam_start + PYNODE_param_quotes + str(30) + PYNODE_param_quotes + NODE_param_end
+        textfile_output.write(HDANODE_BASEDirparamX) #X
+        textfile_output.write('\n') # newline
+        HDANODE_BASEDirparamZ = HDA_NODE_name + HDANODE_BASEDIRZparam_start + PYNODE_param_quotes + str(30) + PYNODE_param_quotes + NODE_param_end
+        textfile_output.write(HDANODE_BASEDirparamZ) #X
+        textfile_output.write('\n') # newline
 
         # set ledgedir TOP BOT vectors  ====================================================================================================
         if ( "U" in PATH_ledgedir) :
@@ -270,6 +272,19 @@ def create_tops_code_gen(createnodes , connectnodes) :
           print(HDANODE_STARTBparam_final)
           textfile_output.write(HDANODE_STARTBparam_final) #START B
           textfile_output.write('\n') # newline
+        # set STRAIGHT ====================================================================================================
+        if ( "STRAIGHT" in PATH_typedir) :
+          HDANODE_STARTparam_final = HDA_NODE_name + HDANODE_STRAIGHTparam_start + PYNODE_param_quotes + "1" + PYNODE_param_quotes + NODE_param_end
+          print(HDANODE_STARTparam_final)
+          textfile_output.write(HDANODE_STARTparam_final) #START
+          textfile_output.write('\n') # newline
+          #if ( current_PATH_set == "BASE") :
+          HDANODE_BASEDirparamX = HDA_NODE_name + HDANODE_BASEDIRXparam_start + PYNODE_param_quotes + str(0) + PYNODE_param_quotes + NODE_param_end
+          textfile_output.write(HDANODE_BASEDirparamX) #X
+          textfile_output.write('\n') # newline
+          HDANODE_BASEDirparamZ = HDA_NODE_name + HDANODE_BASEDIRZparam_start + PYNODE_param_quotes + str(50) + PYNODE_param_quotes + NODE_param_end
+          textfile_output.write(HDANODE_BASEDirparamZ) #Z
+          textfile_output.write('\n') # newline
 
 
         #set input for ledge ====================================================================================================
@@ -292,11 +307,16 @@ def create_tops_code_gen(createnodes , connectnodes) :
 
         component_sub_count = 0
         # OUTPUT FILE PARAMETERS ====================================================================================================
-        for current_COMPONENT_SUB_set in PATH_LEDGE_component_ARRAY :
-          #$HIP/export/$HIPNAME`_``@wedgenum``_BASE_TURN_RU_floor`.bgeo.sc
-          current_COMPONENT_overide = current_COMPONENT_SUB_set
+        while component_sub_count < 6:
+
           if ( current_PATH_set == "BASE") :
+            if component_sub_count >= len(PATH_BASE_component_ARRAY):
+              break
             current_COMPONENT_overide = PATH_BASE_component_ARRAY[component_sub_count]
+          if ( current_PATH_set != "BASE") :
+            if component_sub_count >= len(PATH_LEDGE_component_ARRAY):
+              break
+            current_COMPONENT_overide = PATH_LEDGE_component_ARRAY[component_sub_count]
 
           HDANODE_OUTparam_current = NODE_EXPORT_start + current_PATH_set + "_" + PATH_ledgedir + "_"  + PATH_typedir + "_" + current_COMPONENT_overide + "`.bgeo.sc"
           HDANODE_OUTparam_final = HDA_NODE_name + NODE_param_start + PYNODE_param_quotes + "outputfile" + str(component_sub_count+1) + PYNODE_param_quotes + NODE_param_mid + PYNODE_param_quotes + HDANODE_OUTparam_current + PYNODE_param_quotes + NODE_param_end
@@ -351,7 +371,7 @@ def delete_unused_nodes():
 # 1. CREATE NODOES - if false then only UPDATE parameters on existing
 # 2. CONNECT NODES
 #create_tops_code_gen(True,True)  
-create_tops_code_gen(False,False)  
+create_tops_code_gen(False,True)  
 delete_unused_nodes()
 time.sleep(2.0)
 textfile_output.close

@@ -7,8 +7,9 @@ METADIR_ARRAY = ["U","D","R","L"]
 START_ARRAY = ["START_R","START_L","START_U","START_D"]
 END_ARRAY = ["END_R","END_L","END_U","END_D"]
 DIR_ARRAY = ["TURN_RU","TURN_UL","TURN_LD","TURN_DR","TURN_RD","TURN_UR","TURN_LU","TURN_DL"]
+STRAIGHT_ARRAY = ["STRAIGHT_R","STRAIGHT_L","STRAIGHT_U","STRAIGHT_D"]
 #DIR_ARRAY = ["TURN_RU","TURN_DR","TURN_RD","TURN_UR"]
-TYPEDIR_ARRAY = START_ARRAY + DIR_ARRAY + END_ARRAY 
+TYPEDIR_ARRAY = START_ARRAY + DIR_ARRAY + END_ARRAY + STRAIGHT_ARRAY
 #SET_ARRAY = ["LEDGE_CAVE_STALAG","LEDGE_FOREST","LEDGE_CLIFF","DIFF_REACTION"]
 LEDGE_component_ARRAY = ["floor","bot","top","distant","collision"]
 wedge_max = 1
@@ -21,6 +22,7 @@ actor_rotation = unreal.Rotator(0.0,0.0,0.0)
 
 editor_file_utils = unreal.EditorLoadingAndSavingUtils()
 
+# SPAWN ACTOR FUNCTION , SETS PARAMETERS
 def spawnActor(meshpath,levelname,meshname):
   obj = unreal.load_asset(meshpath)
   temp_actor = unreal.EditorLevelLibrary.spawn_actor_from_object(obj, actor_location, actor_rotation)
