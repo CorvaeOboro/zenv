@@ -48,33 +48,35 @@ while (wedge_count < wedge_max) : # FOR EACH WEDGE
   current_SET = "LEDGEFOREST"
   for current_METADIR  in METADIR_ARRAY:
     for current_DIR in TYPEDIR_ARRAY : # FOR EACH TYPE DIRECTION
-      level_to_load = '/Game/00_MAPS/ARPG/00_TEMPLATE/' + current_DIR
-      loaded_level = editor_file_utils.load_map(level_to_load)
-
       level_to_save = '/Game/00_MAPS/ARPG/' + "ARPG_" + current_SET + "/" + current_SET + "_" + current_METADIR + "_" + current_DIR + "_" + str(wedge_count)
-      level_saved = editor_file_utils.save_map(loaded_level, level_to_save)
-      load_new_level = editor_file_utils.load_map(level_to_save)
-      #time.sleep(10)
+      if not unreal.EditorAssetLibrary.does_asset_exist(level_to_save):
 
-      # PLACE CORRESPONDING MESHES
-      # BASE 
-      currrent_BASEComp = "env_area_gen_A_" + str(wedge_count) + "_" + "BASE" + "_" + current_DIR + "_" 
-      currrent_BASEComp_sides = currrent_BASEComp + "COL_side"
-      currrent_BASEComp_floor = currrent_BASEComp + "COL_floor"
-      BASEMeshComp_final = '/Game/00_MAPS/ARPG/' + "ARPG_" + "BASE" + "/env/"
-      BASE_COL_sides_final  = BASEMeshComp_final + currrent_BASEComp_sides + "." + currrent_BASEComp_sides
-      BASE_COL_floor_final  = BASEMeshComp_final + currrent_BASEComp_floor + "." + currrent_BASEComp_floor
-      #spawnActor(BASE_COL_sides_final,level_to_save)
-      #print(BASE_COL_sides_final)
-      #spawnActor(BASE_COL_floor_final,level_to_save)
-      #print(BASE_COL_floor_final)
-      # TYPE DIRECTIONS 
-      for current_COMPONENT in LEDGE_component_ARRAY :
-        currrent_MeshComp = "PATH_" + str(wedge_count) + "_" + current_SET + "_" + current_METADIR + "_" + current_DIR + "_" + current_COMPONENT
-        MeshComp_final = '/Game/00_MAPS/ARPG/' + "ARPG_" + current_SET + "/env/" + currrent_MeshComp + "." + currrent_MeshComp
-        spawnActor(MeshComp_final,level_to_save,currrent_MeshComp)
-        print(MeshComp_final)
+        level_to_load = '/Game/00_MAPS/ARPG/00_TEMPLATE/' + current_DIR
+        loaded_level = editor_file_utils.load_map(level_to_load)
 
-      editor_file_utils.save_current_level()
+        level_saved = editor_file_utils.save_map(loaded_level, level_to_save)
+        load_new_level = editor_file_utils.load_map(level_to_save)
+        #time.sleep(10)
+
+        # PLACE CORRESPONDING MESHES
+        # BASE 
+        currrent_BASEComp = "env_area_gen_A_" + str(wedge_count) + "_" + "BASE" + "_" + current_DIR + "_" 
+        currrent_BASEComp_sides = currrent_BASEComp + "COL_side"
+        currrent_BASEComp_floor = currrent_BASEComp + "COL_floor"
+        BASEMeshComp_final = '/Game/00_MAPS/ARPG/' + "ARPG_" + "BASE" + "/env/"
+        BASE_COL_sides_final  = BASEMeshComp_final + currrent_BASEComp_sides + "." + currrent_BASEComp_sides
+        BASE_COL_floor_final  = BASEMeshComp_final + currrent_BASEComp_floor + "." + currrent_BASEComp_floor
+        #spawnActor(BASE_COL_sides_final,level_to_save)
+        #print(BASE_COL_sides_final)
+        #spawnActor(BASE_COL_floor_final,level_to_save)
+        #print(BASE_COL_floor_final)
+        # TYPE DIRECTIONS 
+        for current_COMPONENT in LEDGE_component_ARRAY :
+          currrent_MeshComp = "PATH_" + str(wedge_count) + "_" + current_SET + "_" + current_METADIR + "_" + current_DIR + "_" + current_COMPONENT
+          MeshComp_final = '/Game/00_MAPS/ARPG/' + "ARPG_" + current_SET + "/env/" + currrent_MeshComp + "." + currrent_MeshComp
+          spawnActor(MeshComp_final,level_to_save,currrent_MeshComp)
+          print(MeshComp_final)
+
+        editor_file_utils.save_current_level()
 
   wedge_count +=1

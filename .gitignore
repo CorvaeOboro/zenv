@@ -17,3 +17,6 @@
 *credentials.json
 **/python/zenv/**
 **/python/output/**
+*SNAPMAP_MODULE_LIST_*.txt
+*PATH_TOPs_SET.txt
+*HOUDINI_PATH_TOPs_CREATE_SET.bat

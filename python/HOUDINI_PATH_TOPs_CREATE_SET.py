@@ -65,6 +65,10 @@ HDANODE_LEDGETOPDIRZparam_start = '''.setParms({'hdap_TOP_DIRECTIONinput_DIRz':'
 HDANODE_LEDGEBOTDIRXparam_start = '''.setParms({'hdap_BOT_DIRECTIONinput_DIR2x':'''
 HDANODE_LEDGEBOTDIRZparam_start = '''.setParms({'hdap_BOT_DIRECTIONinput_DIR2z':'''
 
+HDANODE_JITTERA_start = '''.setParms({'hdap_JITTERAscale':'''
+HDANODE_JITTERB_start = '''.setParms({'hdap_JITTERBscale2':'''
+HDANODE_JITTERC_start = '''.setParms({'hdap_JITTERCscale3':'''
+
 HDA_fileinput = "inputfile"
 #HDA_Path = "H:/HOUDINI/ZENV/hda/"
 HDA_Path = "H:/MODELS/HOUDINI/00_OTL_DIGITALASSET/Z/hda/"
@@ -284,6 +288,16 @@ def create_tops_code_gen(createnodes , connectnodes) :
           textfile_output.write('\n') # newline
           HDANODE_BASEDirparamZ = HDA_NODE_name + HDANODE_BASEDIRZparam_start + PYNODE_param_quotes + str(50) + PYNODE_param_quotes + NODE_param_end
           textfile_output.write(HDANODE_BASEDirparamZ) #Z
+          textfile_output.write('\n') # newline
+          # JITTER - STRAIGHT
+          HDANODE_JITTERAparam = HDA_NODE_name + HDANODE_JITTERA_start + PYNODE_param_quotes + str(5) + PYNODE_param_quotes + NODE_param_end
+          textfile_output.write(HDANODE_JITTERAparam) #Z
+          textfile_output.write('\n') # newline
+          HDANODE_JITTERBparam = HDA_NODE_name + HDANODE_JITTERB_start + PYNODE_param_quotes + str(4) + PYNODE_param_quotes + NODE_param_end
+          textfile_output.write(HDANODE_JITTERBparam) #Z
+          textfile_output.write('\n') # newline
+          HDANODE_JITTERCparam = HDA_NODE_name + HDANODE_JITTERC_start + PYNODE_param_quotes + str(3.3) + PYNODE_param_quotes + NODE_param_end
+          textfile_output.write(HDANODE_JITTERCparam) #Z
           textfile_output.write('\n') # newline
 
 
