@@ -33,6 +33,12 @@
 <p><img alt="z_GEN_STAIRWAY" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STAIRWAY/z_GEN_STAIRWAY_B.jpg?raw=true" title="z_GEN_STAIRWAY" /></p>
 <p><img alt="z_GEN_STAIRWAY" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STAIRWAY/z_GEN_STAIRWAY.jpg?raw=true" title="z_GEN_STAIRWAY" /></p>
 <p><img alt="z_GEN_STAIRWAY" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STAIRWAY/z_GEN_STAIRWAY_nodes.jpg?raw=true" title="z_GEN_STAIRWAY" /></p>
+<h1>z_GEN_STONE_BRICK_CIRCLE</h1>
+<ul>
+<li>generates a circular shaped brick section by evenly voronoi fracturing and extruding toward center .</li>
+<li>applies additional noise and separation to resemble stone surface</li>
+</ul>
+<p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE_pillar.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
 <h1>z_CURL_LINES_THEN_PLACE_SPIRALS</h1>
 <p>creates curllines on the surface of mesh then copies spirals to the geometry with collision detection</p>
 <p><img alt="z_CURL_LINES_THEN_PLACE_SPIRALS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CURL_LINES_THEN_PLACE_SPIRALS/z_CURL_LINES_THEN_PLACE_SPIRALS.jpg?raw=true" title="z_CURL_LINES_THEN_PLACE_SPIRALS" /></p>
@@ -41,18 +47,14 @@
 <li>creates circular patterns inspired by asian design . scatters circles , then radiate those circles outward while avoiding intersection by order or generation . </li>
 </ul>
 <p><img alt="z_GEN_CIRCLES_RADIATE_PATTERN" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_CIRCLES_RADIATE_PATTERN/z_GEN_CIRCLES_RADIATE_PATTERN.jpg?raw=true" title="z_GEN_CIRCLES_RADIATE_PATTERN" /></p>
-<h1>z_GEN_STONE_BRICK_CIRCLE</h1>
-<ul>
-<li>generates a circular shaped brick section by evenly voronoi fracturing and extruding toward center .</li>
-<li>applies additional noise and separation to resemble stone surface</li>
-</ul>
-<p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
-<p><img alt="z_GEN_STONE_BRICK_CIRCLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_STONE_BRICK_CIRCLE/z_GEN_STONE_BRICK_CIRCLE_pillar.jpg?raw=true" title="z_GEN_STONE_BRICK_CIRCLE" /></p>
 <h1>z_HELIX_ALONG_CURVE</h1>
 <ul>
 <li>creates a helix curves along input curve  </li>
 </ul>
 <p><img alt="z_HELIX_ALONG_CURVE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_HELIX_ALONG_CURVE/z_HELIX_ALONG_CURVE.jpg?raw=true" title="z_HELIX_ALONG_CURVE" /></p>
+<h1>z_GEN_ROCK_THIRDS</h1>
+<p>creates a rock stylized by lot subdivision rule of thirds , setup for PDG</p>
+<p><img alt="z_GEN_ROCK_THIRDS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_ROCK_THIRDS/z_GEN_ROCK_THIRDS.jpg?raw=true" title="z_GEN_ROCK_THIRDS" /></p>
 <h1>z_WIRE_OVERLAPING_OFFSET</h1>
 <ul>
 <li>creates wires rayed to ground , properly overlapping . input curves and collision 
@@ -61,11 +63,11 @@
 <h1>z_GEN_RUNES</h1>
 <p>creates rune like symbols</p>
 <p><img alt="z_GEN_RUNES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_RUNES/z_GEN_RUNES.jpg?raw=true" title="z_GEN_RUNES" /></p>
-<h1>z_GEN_ROCK_THIRDS</h1>
-<p>creates a rock stylized by lot subdivision rule of thirds , setup for PDG</p>
-<p><img alt="z_GEN_ROCK_THIRDS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_ROCK_THIRDS/z_GEN_ROCK_THIRDS.jpg?raw=true" title="z_GEN_ROCK_THIRDS" /></p>
 <h1>z_GEN_PILLAR</h1>
-<p>generate pillar - holding multiple brick generators and circle brick generators assembled to create a full pillar .</p>
+<ul>
+<li>generate pillar - holding multiple brick generators and circle brick generators assembled to create a full pillar .</li>
+</ul>
+<p><img alt="z_GEN_PILLAR" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_PILLAR/z_GEN_PILLAR.jpg?raw=true" title="z_GEN_PILLAR" /></p>
 <h1>z_GEN_ROCK_4m</h1>
 <ul>
 <li>generates rock surface , fractures input mesh and applies randomized offsets , setup for pdg randomness</li>
@@ -98,21 +100,33 @@
 </ul>
 <p><img alt="z_GEN_LATTICE_GRIDMESH" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_LATTICE_GRIDMESH/z_GEN_LATTICE_GRIDMESH.jpg?raw=true" title="z_GEN_LATTICE_GRIDMESH" /></p>
 <h1>z_GEN_HEXA_STRUCTURE</h1>
-<p>creates a hexagon support structure based on input mesh</p>
+<ul>
+<li>creates a hexagon support structure based on input mesh</li>
+</ul>
+<p><img alt="z_GEN_HEXA_STRUCTURE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_GEN_HEXA_STRUCTURE/z_GEN_HEXA_STRUCTURE.jpg?raw=true" title="z_GEN_HEXA_STRUCTURE" /></p>
 <h1>z_PLANTS_HELIX_ROOTS</h1>
 <ul>
 <li>creates winding intertwined roots from an input guide line .</li>
 </ul>
 <p><img alt="z_PLANTS_HELIX_ROOTS" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_HELIX_ROOTS/z_PLANTS_HELIX_ROOTS.jpg?raw=true" title="z_PLANTS_HELIX_ROOTS" /></p>
 <h1>z_PLANTS_FUNGI</h1>
-<p>creates a fungus mushroom mesh</p>
+<ul>
+<li>creates a fungus mushroom mesh</li>
+</ul>
+<p><img alt="z_PLANTS_FUNGI" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_FUNGI/z_PLANTS_FUNGI.jpg?raw=true" title="z_PLANTS_FUNGI" /></p>
 <h1>z_PLANTS_LEAF</h1>
-<p>creates a hipoly leaf mesh</p>
+<ul>
+<li>creates a hipoly leaf mesh</li>
+</ul>
 <p><img alt="z_PLANTS_LEAF" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_LEAF/z_PLANTS_LEAF.jpg?raw=true" title="z_PLANTS_LEAF" /></p>
 <h1>z_PLANTS_BARK</h1>
-<p>creates bark pieces for tree</p>
+<ul>
+<li>creates bark pieces for tree</li>
+</ul>
+<p><img alt="z_PLANTS_BARK" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_BARK/z_PLANTS_BARK.jpg?raw=true" title="z_PLANTS_BARK" /></p>
 <h1>z_PLANTS_BARK_PLACER</h1>
 <p>layout bark on mesh surface guided by curves , smooth aligned , used with tree </p>
+<p><img alt="z_PLANTS_BARK_PLACER" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_BARK_PLACER/z_PLANTS_BARK_PLACER.jpg?raw=true" title="z_PLANTS_BARK_PLACER" /></p>
 <h1>z_PLANTS_PETAL_FORM</h1>
 <ul>
 <li>generates petal from curve backbone and multiple warped elipse curves defining the shape changes over the length of the backbone </li>
@@ -129,7 +143,7 @@
 </ul>
 <p><img alt="z_PLANTS_VINES_W_LEAVES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_VINES_W_LEAVES/z_PLANTS_VINES_W_LEAVES_02.jpg?raw=true" title="z_PLANTS_VINES_W_LEAVES_02" /></p>
 <h1>z_PLANTS_MOSS_HANGING</h1>
-<p>creates hanging placements of moss mesh , leaves , spirals . placed onto input mesh .</p>
+<p>creates hanging placements of moss mesh , leaves , spirals . automatically placed onto input mesh , wrapped to not intersect .</p>
 <p><img alt="z_PLANTS_MOSS_HANGING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_MOSS_HANGING/z_PLANTS_MOSS_HANGING.jpg?raw=true" title="z_PLANTS_MOSS_HANGING" /></p>
 <h1>z_PLANTS_VINES_GUIDED</h1>
 <p>generate a vine tube using a wandering path finder guided variably by a curve or direction vector</p>
@@ -141,32 +155,56 @@
 <p><img alt="z_PLANTS_TREE_PATHFIND" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANTS_TREE_PATHFIND/z_PLANTS_TREE_PATHFIND.jpg?raw=true" title="z_PLANTS_TREE_PATHFIND" /></p>
 <h1>z_ITEM_ABILITY_ICON</h1>
 <p>creates an icon of ability , setup for TOPs randomization to generate dataset</p>
-<p><img alt="z_ITEM_ABILITY_ICON" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_ABILITY_ICON/gen_ability_icon_pdg_02.jpg?raw=true" title="z_ITEM_ABILITY_ICON" /></p>
+<p><img alt="z_ITEM_ABILITY_ICON" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_ABILITY_ICON/z_ITEM_ABILITY_ICON.jpg?raw=true" title="z_ITEM_ABILITY_ICON" /></p>
 <p><img alt="z_ITEM_ABILITY_ICON" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_ABILITY_ICON/gen_icon_procgen_comp.jpg?raw=true" title="z_ITEM_ABILITY_ICON" /></p>
-<h1>z_ITEM_POTION</h1>
-<p>creates variety of potion items in TOPS by wedgenum</p>
 <h1>z_ITEM_RING</h1>
 <p>creates variety of ring items , helix , diffusion tubes , rock gemstones ,  setup for TOPs randomization by wedgenum .</p>
 <p><img alt="z_ITEM_RING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/item_ring_procgen.jpg?raw=true" title="z_ITEM_RING" /></p>
-<p><img alt="z_ITEM_RING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/item_ring_pdgA_comp.jpg?raw=true" title="z_ITEM_RING" /></p>
+<p><img alt="z_ITEM_RING" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING/z_ITEM_RING.jpg?raw=true" title="z_ITEM_RING" /></p>
 <h1>z_ITEM_RING_FROM_IMAGE</h1>
-<p>creates a projected 3d ring from isometric image , setup for TOPs processing folder of images to 3d relit renders</p>
+<ul>
+<li>creates a projected 3d ring from isometric image , setup for TOPs processing folder of images to 3d relit renders</li>
+</ul>
 <p><img alt="z_ITEM_RING_FROM_IMAGE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_RING_FROM_IMAGE/z_ITEM_RING_FROM_IMAGE.jpg?raw=true" title="z_ITEM_RING_FROM_IMAGE" /></p>
-<p>in this example , isometric ring images mutated by text-to-image guided alteration ( VQGAN+CLIP ) are the input , projected into 3d and rendered with consitent lighting </p>
+<ul>
+<li>in this example , isometric ring images mutated by text-to-image guided alteration ( VQGAN+CLIP ) are the input , projected into 3d and rendered with consitent lighting </li>
+</ul>
 <h1>z_ITEM_SWORD</h1>
 <p>creates sword item variants</p>
-<h1>z_ITEM_HELM</h1>
-<p>creates variety of helm items in TOPS by wedgenum</p>
-<h1>z_ITEM_POTION</h1>
-<p>creates variety of potion items in TOPS by wedgenum</p>
-<h1>z_ITEM_BOW</h1>
-<p>creates bow item variants</p>
 <h1>z_ITEM_SWORD_FROM_IMAGE</h1>
 <p>creates a sword mesh from image , traces png alpha  , orients vertically , thickens from center skeleton line , sets uvs to match image , bakes colors to vertex colors</p>
+<h1>z_ITEM_HELM</h1>
+<p>creates variety of helm items in TOPS by wedgenum</p>
 <h1>z_ITEM_HELM_FROM_IMAGE</h1>
 <p>projects a helm mesh from image </p>
+<h1>z_ITEM_POTION</h1>
+<ul>
+<li>creates variety of potion items in TOPS by wedgenum</li>
+</ul>
+<p><img alt="z_ITEM_POTION" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_POTION/z_ITEM_POTION.jpg?raw=true" title="z_ITEM_POTION" /></p>
 <h1>z_ITEM_POTION_FROM_IMAGE</h1>
-<p>creates 3d potion from image</p>
+<ul>
+<li>creates 3d potion from image</li>
+</ul>
+<p><img alt="z_ITEM_POTION_FROM_IMAGE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_ITEM_POTION_FROM_IMAGE/z_ITEM_POTION_FROM_IMAGE.jpg?raw=true" title="z_ITEM_POTION_FROM_IMAGE" /></p>
+<h1>z_ITEM_BOW</h1>
+<p>creates bow item variants</p>
+<h1>z_ITEM_POTION</h1>
+<p>creates variety of potion items in TOPS by wedgenum</p>
+<h1>z_PATH_LEDGE_CAVE_STALAG</h1>
+<ul>
+<li>creates modular PATH cave for use with snapmap</li>
+</ul>
+<p><img alt="z_PATH_LEDGE_CAVE_STALAG" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PATH_LEDGE_CAVE_STALAG/z_PATH_LEDGE_CAVE_STALAG.jpg?raw=true" title="z_PATH_LEDGE_CAVE_STALAG" /></p>
+<h1>z_PATH_LEDGE_DIFFUSION</h1>
+<ul>
+<li>creates modular PATH diffusion reaction for use with snapmap</li>
+</ul>
+<p><img alt="z_PATH_LEDGE_DIFFUSION" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PATH_LEDGE_DIFFUSION/z_PATH_LEDGE_DIFFUSION.jpg?raw=true" title="z_PATH_LEDGE_DIFFUSION" /></p>
+<h1>z_PATH_LEDGE_FOREST</h1>
+<p>creates modular PATH forest for use with snapmap</p>
+<h1>z_PATH_LEDGE_POOLS</h1>
+<p>creates modular PATH pools for use with snapmap</p>
 <h1>z_PATH_REVIEW</h1>
 <p>layout path based meshes to review their connections</p>
 <h1>z_PATH_BASE</h1>
@@ -200,6 +238,7 @@
 <li>pipe / wire curve deform , similar to path deform modified specifically for repeating modular meshes .</li>
 <li>copies input mesh repeating along curve without stretching , adds cuts for smoother bending , projects normals outward from curve . </li>
 </ul>
+<p><img alt="z_COPY_MESH_ALONG_CURVE_DEFORM" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_COPY_MESH_ALONG_CURVE_DEFORM/z_COPY_MESH_ALONG_CURVE_DEFORM.jpg?raw=true" title="z_COPY_MESH_ALONG_CURVE_DEFORM" /></p>
 <h1>z_COPY_TO_EVENLY_DISTRIBUTED_GRID</h1>
 <ul>
 <li>copy by piecenum to dynamic evenly spaced grid - useful when baking and review</li>
@@ -209,7 +248,7 @@
 <ul>
 <li>copies input to each of the nearby quadrants preview tiling ( 4m default )</li>
 </ul>
-<p><img alt="z_TILEABLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_TILEABLES/z_TILEABLE.jpg?raw=true" title="z_TILEABLE" /></p>
+<p><img alt="z_TILEABLE" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_TILEABLE/z_TILEABLE.jpg?raw=true" title="z_TILEABLE" /></p>
 <h1>z_TRANSFORM_ITERATE_COLLISION_CHECK</h1>
 <ul>
 <li>iteratively move pieces towards nearest goal while avoid itersection with collision ( an iterative simplified gravity / attraction sop based )</li>
@@ -239,6 +278,11 @@
 </ul>
 <p><img alt="z_NOISE_DISPLACE_MASKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_NOISE_DISPLACE_MASKED/z_NOISE_DISPLACE_MASKED.jpg?raw=true" title="z_NOISE_DISPLACE_MASKED" /></p>
 <p><img alt="z_NOISE_DISPLACE_MASKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_NOISE_DISPLACE_MASKED/z_NOISE_DISPLACE_MASKED_large_variants.jpg?raw=true" title="z_NOISE_DISPLACE_MASKED" /></p>
+<h1>z_MESH_CHIP_CRACK</h1>
+<ul>
+<li>boolean subtract chipping and crack meshes onto the surface based on curvature and fit projecting the crack meshes .</li>
+</ul>
+<p><img alt="z_MESH_CHIP_CRACK" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_CHIP_CRACK/z_MESH_CHIP_CRACK.jpg?raw=true" title="z_MESH_CHIP_CRACK" /></p>
 <h1>z_MESH_WRAP_DEFORM_BY_UV</h1>
 <ul>
 <li>deform mesh to another mesh by using the flattened UVs , useful to wrap a pattern around another</li>
@@ -255,11 +299,6 @@
 <li>input mesh surface is segmented by avg n and flattened from multiple directions . useful to randomly planarize from different angles for rock meshes</li>
 </ul>
 <p><img alt="z_PLANARIZE_MULTIPLE_SURFACES" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_PLANARIZE_MULTIPLE_SURFACES/z_PLANARIZE_MULTIPLE_SURFACES.jpg?raw=true" title="z_PLANARIZE_MULTIPLE_SURFACES" /></p>
-<h1>z_MESH_CHIP_CRACKED</h1>
-<ul>
-<li>boolean subtract chipping and crack meshes onto the surface based on curvature and fit projecting the crack meshes .</li>
-</ul>
-<p><img alt="z_MESH_CHIP_CRACKED" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_MESH_CHIP_CRACK/z_MESH_CHIP_CRACK.jpg?raw=true" title="z_MESH_CHIP_CRACKED" /></p>
 <h1>z_CONFORM_INTERSECTING_LERP</h1>
 <ul>
 <li>input mesh is conformed around a given colllision object if is intersecting</li>
@@ -329,7 +368,9 @@
 <h1>z_VDB_INTERNAL_FILL</h1>
 <p>mesh to vdb to mesh , combines multiple lower res vdb's that are eroded to fill in the internal spaces</p>
 <h1>z_VOXEL_AUTOSIZE</h1>
-<p>auto voxel resolution for target polycount , safely lowers resolution on large objects</p>
+<ul>
+<li>auto voxel resolution for target polycount , safely lowers resolution on large objects</li>
+</ul>
 <h1>z_EDGEGROUP_BY_UV_AXIS</h1>
 <ul>
 <li>edgegroup based on axis of uvs , useful for polybeveling specific edges procedurally</li>
@@ -425,8 +466,11 @@ dirt in crevices ( 0 ) of rock ( R ) ,  with moss on top ( G ) , near water ( B 
 </ul>
 <p><img alt="z_CAM_ISOMETRIC" src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/hip/z_CAM_ISOMETRIC/z_CAM_ISOMETRIC.jpg?raw=true" title="z_CAM_ISOMETRIC" /></p>
 <h1>z_CAM_PROJECTION_fspy</h1>
-<p>a wrapper for fspy hda created  by floodini , input fspy json creating camera matching ref image perspective then project that image to floor plane</p>
-<p>nLib fspy_loader = https://github.com/Njordy/nLib</p>
+<ul>
+<li>a wrapper for fspy hda created  by floodini , input fspy json creating camera matching ref image perspective then project that image to floor plane</li>
+<li>nLib fspy_loader = https://github.com/Njordy/nLib</li>
+<li>floodini fspy https://www.youtube.com/watch?v=-WM2hPerYts&amp;ab_channel=Floodini</li>
+</ul>
 <h1>z_EXPORT_TO_UNREAL</h1>
 <p>common settings used before exporting fbx to unreal , material parameter conversion , point color to vtx conversion
 . scale and rotation</p>

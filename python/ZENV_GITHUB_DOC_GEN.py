@@ -195,6 +195,7 @@ def gen_readme_main(workbook,df):
   ORDER_values_list = sheet.col_values(ORDER_index+1)
 
   num_absolute_index = values_list.index("NUM")
+  num_absolute_values_list = sheet.col_values(num_absolute_index+1)
 
   print (TYPE_values_list)
   TYPE_cleaned = []
@@ -242,7 +243,7 @@ def gen_readme_main(workbook,df):
 
   #// TEXT OUTPUT
   #%cd $rootdir
-  textfile_output_filename = str(output_dir) + 'readme_main.txt'
+  textfile_output_filename = str(output_dir) + 'readme_main.md'
   textfile_output_final = open(textfile_output_filename, 'w')
   time.sleep(0.3)
 
@@ -275,7 +276,7 @@ def gen_readme_main(workbook,df):
       if ( current_final_TYPE == TYPE_values_list[name_num]) : # if the type matches
         if ( README_values_list[name_num] == "1") : # if the readme_on cell value is 1
           category_child_list_final.append(current_final_name) # add the current tool to the category section
-          category_child_num_list_final.append(ORDER_values_list[name_num]) # add the current tool to the category section
+          category_child_num_list_final.append(str(num_absolute_values_list[name_num]).zfill(3)) # add the current tool to the category section
           category_child_notes_list_final.append(notes_list[name_num]) # add the current tool to the category section
       name_num = name_num + 1 #iterate the name list
     #print(category_child_list_final)
@@ -409,6 +410,7 @@ def gen_readme_combined(workbook,df):
   ORDER_values_list = sheet.col_values(ORDER_index+1)
 
   num_absolute_index = values_list.index("NUM")
+  num_absolute_values_list = sheet.col_values(num_absolute_index+1)
 
   print (TYPE_values_list)
   TYPE_cleaned = []
@@ -493,7 +495,7 @@ def gen_readme_combined(workbook,df):
       if ( current_final_TYPE == TYPE_values_list[name_num]) : # if the type matches
         if ( README_values_list[name_num] == "1") : # if the readme_on cell value is 1
           category_child_list_final.append(current_final_name) # add the current tool to the category section
-          category_child_num_list_final.append(ORDER_values_list[name_num]) # add the current tool to the category section
+          category_child_num_list_final.append(str(num_absolute_values_list[name_num]).zfill(3)) # add the current tool to the category section
           category_child_notes_list_final.append(notes_list[name_num]) # add the current tool to the category section
       name_num = name_num + 1 #iterate the name list
     #print(category_child_list_final)
@@ -607,6 +609,7 @@ def gen_website_menu(workbook,df):
   ORDER_values_list = sheet.col_values(ORDER_index+1)
 
   num_absolute_index = values_list.index("NUM")
+  num_absolute_values_list = sheet.col_values(num_absolute_index+1)
 
   print (TYPE_values_list)
   TYPE_cleaned = []
@@ -743,7 +746,7 @@ def gen_website_menu(workbook,df):
       if ( current_final_TYPE == TYPE_values_list[name_num]) : # if the type matches
         if ( README_values_list[name_num] == "1") : # if the readme_on cell value is 1
           category_child_list_final.append(current_final_name) # add the current tool to the category section
-          category_child_num_list_final.append(ORDER_values_list[name_num]) # add the current tool to the category section
+          category_child_num_list_final.append(str(num_absolute_values_list[name_num]).zfill(3)) # add the current tool to the category section
           category_child_notes_list_final.append(notes_list[name_num]) # add the current tool to the category section
       name_num = name_num + 1 #iterate the name list
     #print(category_child_list_final)
@@ -937,65 +940,67 @@ def convert_readme_main_to_html():
 
   # for each md in hip folder
 
-  shape_set = glob.glob(os.path.join(repo_dir, "README.md"))
+  #shape_set = glob.glob(os.path.join(repo_dir, "README.md"))
+  #shape_set = glob.glob(os.path.join(output_dir, "/readme_main.md")) # read the generated readme
+  current_readme = os.path.join(output_dir, "readme_main.md")
+  #for current_readme in shape_set :
+  print("CURRENT MAIN README == " + str(current_readme))
+  #%cd $output_directory
+  current_path_full = pathlib.Path(current_readme)
+  current_path_full.absolute()
+  current_readme_filename_noext_stem = current_path_full.stem
+  #current_readme_filename_noext = pathlib.Path(current_path_full).parent
+  current_readme_filename_noext = os.path.split(os.path.dirname(current_path_full))[1]
+  print("CURRENT MAIN FILENAME == " + str(current_readme_filename_noext))
+  readme_html_output = str(output_dir) + "/" + current_readme_filename_noext_stem + '.html'
+  print("README MAIN HTML OUT = " + readme_html_output)
+  textfile_output_final = open(readme_html_output, 'w')
+  time.sleep(0.3)
 
-  for current_readme in shape_set :
-    print("CURRENT README == " + str(current_readme))
-    #%cd $output_directory
-    current_path_full = pathlib.Path(current_readme)
-    current_path_full.absolute()
-    current_readme_filename_noext_stem = current_path_full.stem
-    #current_readme_filename_noext = pathlib.Path(current_path_full).parent
-    current_readme_filename_noext = os.path.split(os.path.dirname(current_path_full))[1]
-    print("CURRENT FILENAME == " + str(current_readme_filename_noext))
-    readme_html_output = str(output_dir) + str(current_readme_filename_noext) + '_' + current_readme_filename_noext_stem + '.html'
-    textfile_output_final = open(readme_html_output, 'w')
-    time.sleep(0.3)
+  with open(current_readme, "r") as infile:
+    # html start
+    textfile_output_final.write(str(html_start)) #html
+    textfile_output_final.write('\n') # newline
+    textfile_output_final.write(str(html_head)) #head
+    textfile_output_final.write('\n') # newline
+    # title
+    textfile_output_final.write(str(html_title)) #title
+    textfile_output_final.write(str(current_readme_filename_noext))
+    textfile_output_final.write(str(html_title_end)) #title_end
+    textfile_output_final.write('\n') # newline
+    textfile_output_final.write(str(html_head_end)) #head_end
+    textfile_output_final.write('\n') # newline
+    # body
+    textfile_output_final.write(str(html_body)) #body
+    textfile_output_final.write('\n') # newline
+    textfile_output_final.write(str(html_style)) #style
+    textfile_output_final.write('\n') # newline
 
-    with open(current_readme, "r") as infile:
-      # html start
-      textfile_output_final.write(str(html_start)) #html
-      textfile_output_final.write('\n') # newline
-      textfile_output_final.write(str(html_head)) #head
-      textfile_output_final.write('\n') # newline
-      # title
-      textfile_output_final.write(str(html_title)) #title
-      textfile_output_final.write(str(current_readme_filename_noext))
-      textfile_output_final.write(str(html_title_end)) #title_end
-      textfile_output_final.write('\n') # newline
-      textfile_output_final.write(str(html_head_end)) #head_end
-      textfile_output_final.write('\n') # newline
-      # body
-      textfile_output_final.write(str(html_body)) #body
-      textfile_output_final.write('\n') # newline
-      textfile_output_final.write(str(html_style)) #style
-      textfile_output_final.write('\n') # newline
-
-      # content
-      text = infile.read()
-      current_notes = markdown.markdown(text,extensions=['markdown.extensions.tables'])
-      
-      #converter = markdown.Markdown(extras=["tables"])  # <-- markdown tables
-      #extensions=['markdown.extensions.tables']
-      #current_notes = converter.convert(text)
-
-      time.sleep(0.3)
-      textfile_output_final.write(str(current_notes))
-      time.sleep(0.3)
-      infile.close()
-      time.sleep(0.3)
-
-      # end html
-      textfile_output_final.write('\n') # newline
-      textfile_output_final.write(str(html_style_end)) #style_end
-      textfile_output_final.write('\n') # newline
-      textfile_output_final.write(str(html_body_end)) #body_end
-      textfile_output_final.write('\n') # newline
-      textfile_output_final.write(str(html_start_end)) #html_start_end
+    # content
+    text = infile.read()
+    current_notes = markdown.markdown(text,extensions=['markdown.extensions.tables'])
+    
+    #converter = markdown.Markdown(extras=["tables"])  # <-- markdown tables
+    #extensions=['markdown.extensions.tables']
+    #current_notes = converter.convert(text)
 
     time.sleep(0.3)
-    textfile_output_final.close()
+    textfile_output_final.write(str(current_notes))
     time.sleep(0.3)
+    infile.close()
+    time.sleep(0.3)
+
+    # end html
+    textfile_output_final.write('\n') # newline
+    textfile_output_final.write(str(html_style_end)) #style_end
+    textfile_output_final.write('\n') # newline
+    textfile_output_final.write(str(html_body_end)) #body_end
+    textfile_output_final.write('\n') # newline
+    textfile_output_final.write(str(html_start_end)) #html_start_end
+
+  time.sleep(0.3)
+  textfile_output_final.close()
+  time.sleep(0.3)
   #!zip -r /content/file_main_html.zip /content/zenv/docs/hip
   #from google.colab import files
   #files.download("/content/zenv/docs/zenv_README.html")
@@ -1011,23 +1016,53 @@ def fix_main_readme_html():
   print("=== FIX MAIN README HTML ===")
   # TODO convert links to local /hip (find/replace), convert image src of icons to githubcontent path (find/replace)
   # TODO remove the table row that contains markdown alignment example = :--- :---: , remove first row ____ padding
-  readme_zenv_html_output =  str(output_dir) + 'zenv_README.html'
+  readme_zenv_html_output =  str(output_dir) + 'readme_main.html'
+  print("CURRENT MAIN README == " + str(readme_zenv_html_output))
   
-  html_extra_table_rows = '''  
-  <tr>
-  <td style="text-align: left;">______</td>
-  <td style="text-align: left;"></td>
-  <td style="text-align: left;"></td>
-  </tr>
-  <tr>
-  <td style="text-align: left;">:---</td>
-  <td style="text-align: left;">:---</td>
-  <td style="text-align: left;">:---</td>
-  </tr>'''
+  html_extra_table_rows = '''<tr>
+<td style="text-align: left;">______</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">:---</td>
+<td style="text-align: left;">:---</td>
+<td style="text-align: left;">:---</td>
+</tr>'''
   html_ahref_links_start = '''a href="https://github.com/corvaeoboro/zenv/tree/master/hip'''
   html_ahref_links_replace = '''a href="hip'''
-  html_img_src_start = '''img src="'''
-  html_img_src_replace = '''img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon'''
+  #html_img_src_start = '''img src="'''
+  #html_img_src_replace = '''img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon'''
+  html_hashtag_to_h2 ='''>##'''
+  html_hashtag_to_h2_replace ='''><h2>'''
+  html_hashtag_to_h2_end ='''##<'''
+  html_hashtag_to_h2_end_replace ='''</h2><'''
+  html_extra_tablehead_rows = '''<tr>
+<th style="text-align: left;">______</th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+</tr>'''
+
+  f = open(readme_zenv_html_output,'r')
+  filedata = f.read()
+  time.sleep(0.3)
+  f.close()
+  time.sleep(0.3)
+
+  newdata = filedata
+  newdata = newdata.replace(html_extra_table_rows,"") # remove extra tables
+  newdata = newdata.replace(html_ahref_links_start,html_ahref_links_replace) # replace github links to local
+  #newdata = newdata.replace(html_img_src_start,html_img_src_replace) #replace image links with fullpath
+  newdata = newdata.replace(html_hashtag_to_h2,html_hashtag_to_h2_replace) # hashtag to h2
+  newdata = newdata.replace(html_hashtag_to_h2_end,html_hashtag_to_h2_end_replace) # hashtag to h2
+  newdata = newdata.replace(html_extra_tablehead_rows,"") #remove extra tables at start
+
+  f = open(readme_zenv_html_output,'w')
+  f.write(newdata)
+  time.sleep(0.3)
+  f.close()
+  time.sleep(0.3)
+
 
 #//==================================================================================================
 #// MAIN - auth gsheet git , generate readme and html docs
