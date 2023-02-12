@@ -23,10 +23,6 @@ textfile_output.write(TOP_start) #START
 textfile_output.write('\n') # newline
 textfile_output.write(WEDGE_start) #START
 textfile_output.write('\n') # newline
-PATH_set = "BASE"
-PATH_type = "TURN"
-PATH_DIR = "RU"
-PATH_component = "COL_side"
 
 NODE_EXPORT_start = '''$HIP/geo/`PATH_``@wedgenum``_'''
 #NODE_EXPORT_start = '''$HIP/geo/$HIPNAME`_``@wedgenum``_'''
@@ -77,6 +73,7 @@ HDA_Ledge_Path = HDA_Path + "z_PATH_LEDGE.hda"
 HDA_Ledge_Pools_Path = HDA_Path + "z_PATH_LEDGE_POOLS.hda"
 HDA_Ledge_Preview_Path = HDA_Path + "z_PATH_LEDGE_POOLS.hda"
 HDA_Ledge_Forest_Path = HDA_Path + "z_PATH_LEDGE_FOREST.hda"
+HDA_Ledge_CaveStalag_Path = HDA_Path + "z_PATH_LEDGE_CAVE_STALAG.hda"
 
 PATH_LEDGEDIR_ARRAY = ["U","D","R","L"] # grouped such that the opposite is missing ( U = RLU , no down ) 
 PATH_LEDGEDIRU_ARRAY = ["30","-60","-30","60"]
@@ -88,10 +85,10 @@ PATH_LEDGEDIRL_ARRAY = ["-60","30","60","-30"]
 
 
 # a list of the nodes that should be excluded from directinal groups , end piece directions are reversed
-PATH_LEDGEDIRU_ANTI_ARRAY = ["TURN_LD","TURN_DR","TURN_DL","TURN_RD","START_D","END_U"]
-PATH_LEDGEDIRD_ANTI_ARRAY = ["TURN_RU","TURN_UL","TURN_LU","TURN_UR","START_U","END_D"]
-PATH_LEDGEDIRR_ANTI_ARRAY = ["TURN_UL","TURN_LD","TURN_LU","TURN_DL","START_L","END_R"]
-PATH_LEDGEDIRL_ANTI_ARRAY = ["TURN_RU","TURN_DR","TURN_RD","TURN_UR","START_R","END_L"]
+PATH_LEDGEDIRU_ANTI_ARRAY = ["TURN_LD","TURN_DR","TURN_DL","TURN_RD","START_D","END_U","STRAIGHT_D"]
+PATH_LEDGEDIRD_ANTI_ARRAY = ["TURN_RU","TURN_UL","TURN_LU","TURN_UR","START_U","END_D","STRAIGHT_U"]
+PATH_LEDGEDIRR_ANTI_ARRAY = ["TURN_UL","TURN_LD","TURN_LU","TURN_DL","START_L","END_R","STRAIGHT_L"]
+PATH_LEDGEDIRL_ANTI_ARRAY = ["TURN_RU","TURN_DR","TURN_RD","TURN_UR","START_R","END_L","STRAIGHT_R"]
 
 #PATH_DIR_ARRAY = ["TURN_RU","TURN_UL","TURN_LD","TURN_DR","TURN_LU","TURN_DL","TURN_RD","TURN_UR"]
 PATH_DIR_ARRAY = ["TURN_RU","TURN_UL","TURN_LD","TURN_DR","TURN_RD","TURN_UR","TURN_LU","TURN_DL"]
@@ -109,7 +106,7 @@ PATH_DIR_ARRAY_NUM = numpy.concatenate(( PATH_DIR_ARRAY_NUM , PATH_DIR_START_ARR
 #print(PATH_DIR_ARRAY)
 #PATH_LEDGE_SET_ARRAY = ["LEDGECLIFF","LEDGECAVESTALAG","LEDGEFOREST","DIFFREACTION","POOLS","PREVIEW"]
 #PATH_LEDGE_SET_ARRAY = ["PREVIEW"]
-PATH_LEDGE_SET_ARRAY = ["LEDGEFOREST"]
+PATH_LEDGE_SET_ARRAY = ["LEDGE"]
 #//========================================================================
 
 MAIN_set_ARRAY = []
@@ -198,6 +195,8 @@ def create_tops_code_gen(createnodes , connectnodes) :
           HDA_Base_Path_current = HDA_Ledge_Preview_Path
         if ( current_PATH_set == "LEDGEFOREST") :
           HDA_Base_Path_current = HDA_Ledge_Forest_Path
+        if ( current_PATH_set == "LEDGECAVESTALAG") :
+          HDA_Base_Path_current = HDA_Ledge_CaveStalag_Path
         HDANODE_HDAparam_final = HDA_NODE_name + NODE_param_start + PYNODE_param_quotes + "inputfile" + PYNODE_param_quotes + NODE_param_mid + PYNODE_param_quotes + HDA_Base_Path_current + PYNODE_param_quotes + NODE_param_end
         print(HDANODE_HDAparam_final)
         textfile_output.write(HDANODE_HDAparam_final) #HDA FILE PATH
@@ -385,7 +384,7 @@ def delete_unused_nodes():
 # 1. CREATE NODOES - if false then only UPDATE parameters on existing
 # 2. CONNECT NODES
 #create_tops_code_gen(True,True)  
-create_tops_code_gen(False,True)  
+create_tops_code_gen(False,False)  
 delete_unused_nodes()
 time.sleep(2.0)
 textfile_output.close
