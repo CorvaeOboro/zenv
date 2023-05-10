@@ -14,6 +14,7 @@
 - Copy zenv.json to ( C:/Users/USER/Documents/houdini18.5/packages/ ) matching local user and houdini version
 - Edit zenv.json file text line to match local path to zenv folder
 - Alternatively may copy the included houdini.env to ( C:/Users/USER/Documents/houdini18.5/ ) editing to match local path of zenv folder
+- Install reccomended houdini [libraries]( https://github.com/CorvaeOboro/zenv#recommended-libraries ) 
 
 ## HDA TOOLS LIST ##
 jump to category :
@@ -206,6 +207,7 @@ click names below for tool example :
 ## RECOMMENDED LIBRARIES ##
 - SideFXLabs	**[https://github.com/sideeffects/SideFXLabs](https://github.com/sideeffects/SideFXLabs)** 
 - qLib	**[https://github.com/qLab/qLib](https://github.com/qLab/qLib)** 
+- MLOPs	**[https://github.com/Bismuth-Consultancy-BV/MLOPs](https://github.com/Bismuth-Consultancy-BV/MLOPs)** 
 - AeLib	**[https://github.com/Aeoll/Aelib](https://github.com/Aeoll/Aelib)** 
 - nLib	**[https://github.com/Njordy/nLib](https://github.com/Njordy/nLib)** 
 - mifthtools	**[https://github.com/mifth/mifthtools](https://github.com/mifth/mifthtools)** 
