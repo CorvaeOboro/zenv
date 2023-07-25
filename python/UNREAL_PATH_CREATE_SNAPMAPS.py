@@ -1,5 +1,7 @@
 #//=======================================================================================
-#// UNREAL PYTHON - CREATE MAPS from templates for each TYPEDIR place meshes from SET matching
+#// UNREAL PYTHON - CREATE MAPS from templates
+#// run in unreal python scripts
+#// for each TYPEDIR place meshes from SET matching
 #// places Collision meshes from BASE set then meshes from SET
 #//=======================================================================================
 import unreal
@@ -17,7 +19,7 @@ TYPEDIR_ARRAY = START_ARRAY + DIR_ARRAY + END_ARRAY + STRAIGHT_ARRAY
 LEDGE_component_ARRAY = ["floor","bot","top","distant","collision"]
 wedge_max = 1
 ATMOSPHERE_TEMPLATE = "00_ATMOSPHERE"
-current_SET = "LEDGE"
+current_SET = "FRACTUREMEMORY"
 
 # a list of the nodes that should be excluded from directinal groups , end piece directions are reversed
 PATH_LEDGEDIRU_ANTI_ARRAY = ["TURN_LD","TURN_DR","TURN_DL","TURN_RD","START_D","END_U","STRAIGHT_D"]
@@ -56,8 +58,9 @@ def spawnActor(meshpath,levelname,meshname):
 atmosphere_level_to_save = '/Game/00_MAPS/ARPG/' + "ARPG_" + current_SET + "/" + "ARPG_" + current_SET + "_" + "ATMOSPHERE" 
 print("ATMOSPHERE LEVEL = " + atmosphere_level_to_save)
 if not unreal.EditorAssetLibrary.does_asset_exist(atmosphere_level_to_save):
-  atmosphere_template_level = unreal.EditorLevelLibrary.load_level('/Game/00_MAPS/ARPG/00_TEMPLATE/00_ATMOSPHERE')
-  atmosphere_template_level_loaded = editor_file_utils.load_map(atmosphere_template_level)
+  #atmosphere_template_level = unreal.EditorLevelLibrary.load_level('/Game/00_MAPS/ARPG/00_TEMPLATE/00_ATMOSPHERE')
+  #atmosphere_template_level_loaded = editor_file_utils.load_map(atmosphere_template_level)
+  atmosphere_template_level_loaded = editor_file_utils.load_map('/Game/00_MAPS/ARPG/00_TEMPLATE/00_ATMOSPHERE')
   level_saved = editor_file_utils.save_map(atmosphere_template_level_loaded, atmosphere_level_to_save)
 #atmosphere_level_loaded = unreal.EditorLevelLibrary.load_level(atmosphere_level_to_save)
 #atmosphere_level_final = unreal.EditorLevelLibrary.get_EditorWorld()

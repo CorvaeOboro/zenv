@@ -25,7 +25,7 @@ PATH_LEDGEDIRL_ANTI_ARRAY = ["TURN_RU","TURN_DR","TURN_RD","TURN_UR","START_R","
 # EXAMPLE LIST
 #((Level="/Game/00_MAPS/ARPG/ARPG_POOLS/POOLS_TURN_RD_0.POOLS_TURN_RD_0",Category="TURN"),(Level="/Game/00_MAPS/ARPG/ARPG_POOLS/POOLS_TURN_RD_0.POOLS_TURN_RD_0",Category="TURN"))
 
-current_SET = "LEDGEFOREST"
+current_SET = "FRACTUREMEMORY"
 for current_METADIR in METADIR_ARRAY:
     output_file = 'SNAPMAP_MODULE_LIST_' + current_METADIR + '.txt'
     textfile_output = open(output_file, 'w')
