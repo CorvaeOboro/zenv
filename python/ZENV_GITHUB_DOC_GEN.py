@@ -28,6 +28,10 @@ import pathlib
 
 #//==================================================================================================
 #// BASE VARIABLES 
+NAME_README = "readme_hip.md"
+NAME_README_ALL = "readme_hip.md"
+NAME_HTML_MENU = "index.html"
+NAME_HTML_MAIN = "main.html"
 rootdir = os.path.dirname(os.path.abspath(__file__))
 repo_dir = str(rootdir) + "/" + "zenv" + "/"
 output_dir = str(rootdir) + "/" + "output" + "/"
@@ -150,11 +154,6 @@ def gsheet_update_zenv(workbook,df):
     name_iteration += 1
 
 
-
-
-
-
-
 #//==================================================================================================
 #// README MAIN
 #//==================================================================================================
@@ -273,11 +272,12 @@ def gen_readme_main(workbook,df):
     category_child_num_list_final = []
     category_child_notes_list_final = []
     for current_final_name in name_values_list : # for each named tool
-      if ( current_final_TYPE == TYPE_values_list[name_num]) : # if the type matches
-        if ( README_values_list[name_num] == "1") : # if the readme_on cell value is 1
-          category_child_list_final.append(current_final_name) # add the current tool to the category section
-          category_child_num_list_final.append(str(num_absolute_values_list[name_num]).zfill(3)) # add the current tool to the category section
-          category_child_notes_list_final.append(notes_list[name_num]) # add the current tool to the category section
+      if (len(TYPE_values_list) > name_num):
+        if ( current_final_TYPE == TYPE_values_list[name_num]) : # if the type matches
+          if ( README_values_list[name_num] == "1") : # if the readme_on cell value is 1
+            category_child_list_final.append(current_final_name) # add the current tool to the category section
+            category_child_num_list_final.append(str(num_absolute_values_list[name_num]).zfill(3)) # add the current tool to the category section
+            category_child_notes_list_final.append(notes_list[name_num]) # add the current tool to the category section
       name_num = name_num + 1 #iterate the name list
     #print(category_child_list_final)
     #print(category_child_num_list_final)
@@ -656,9 +656,98 @@ def gen_website_menu(workbook,df):
   print(" === FINAL ORDER ===")
 
   #// TEXT OUTPUT
-  website_menu_file = str(output_dir) + 'website_menu.txt'
+  website_menu_file = str(output_dir) + 'index.html'
   textfile_output_final = open(website_menu_file, 'w')
   time.sleep(0.3)
+  final_first_html_menu = '''
+<html>
+<head>
+<title>ZENV - HOUDINI TOOLS </title>
+
+<script type="text/javascript" language="JavaScript"><!--
+<!-- Start of JavaScript (identical for the three  container types) -->
+function FlipDisplay(d1,d2) {
+if(document.getElementById(d1).style.display == "none") { 
+   document.getElementById(d1).style.display = "";
+   document.getElementById(d2).style.display = "none";
+   }
+else {
+   document.getElementById(d1).style.display = "none";
+   document.getElementById(d2).style.display = "";
+   }
+}
+//--></script>
+<!-- End of JavaScript -->
+
+<!-- Start of "normal flow"  style -->
+<style type="text/css">
+.NormalFlow {
+	border:0px #666666 dashed;
+	padding:1px;
+	background-color: #0d1117;
+   }
+#apDiv1 {
+	position:absolute;
+	width:550px;
+	height:115px;
+	z-index:1;
+	left: 550px;
+	top: 4px;
+	background-color: #0d1117;
+}
+#apDiv2 {
+	position:absolute;
+	width:550px;
+	height:115px;
+	z-index:2;
+	left: 696px;
+	top: 4px;
+	background-color: #0d1117;
+}
+#apDiv3 {
+	position:absolute;
+	width:550px;
+	height:115px;
+	z-index:3;
+	left: 1240px;
+	top: 3px;
+	background-color: #0d1117;
+}
+</style>
+<!-- End of "normal flow"  style -->
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- BODY -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<body bgcolor="#0d1117" text="lightslategray" link="#0066CC" vlink="darkslategray" alink="red" SCROLL="NO" >
+<font face="arial">
+
+<table border="0" cellpadding="0" cellspcaing="0">
+<tr><td width="550" height="20" valign="top">
+
+</td>
+<td valign="top" width="1092">
+
+</td>
+</tr>
+<tr><td valign="top" width="550">
+
+
+<div class="NormalFlow">
+<p style="margin:0; font-weight:bold; padding:3px; letter-spacing:3px; font-size:small; text-align:left; font-family: Verdana, Arial, Helvetica, sans-serif;">
+  ZENV HDA TOOLS
+<br>
+<br>
+<a href="https://github.com/CorvaeOboro/zenv" target="_top">GITHUB</a>
+<br><br><a href="https://github.com/CorvaeOboro/zenv/archive/refs/heads/master.zip" target=body>DOWNLOAD</a></p>
+<br>
+
+'''
+  time.sleep(0.3)
+  textfile_output_final.write(final_first_html_menu)
+  time.sleep(0.3)
+  textfile_output_final.write('\n') # newline
 
   #// TABLE OF CONTENTS
   print("+++++++++++ TABLE OF CONTENTS +++++++++++++")
@@ -805,6 +894,26 @@ def gen_website_menu(workbook,df):
     final_absolute_count_num = final_absolute_count_num +100
 
   #for child_presorted in category_child_list_final :
+  time.sleep(0.3)
+  final_last_html_menu = '''
+<br>
+<p style="margin:0; text-align:left; font-family: Verdana, Arial, Helvetica, sans-serif;"><a href="hip.html"  target=body>ALL</a></p>
+
+</td>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<!--    BODY  PAGE     -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<td valign="top" width="1092">
+<center>
+<!-- //<IFRAME SRC="em_main.htm" name="body" frameborder="0" WIDTH="1300" HEIGHT="750">  -->
+<IFRAME SRC="main.html" name="body" frameborder="0"style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:85%;position:absolute;top:0px;left:280px;right:0px;bottom:0px" height="100%" width="82%">
+You can view the page <A HREF="../main.html">here</A>.
+</IFRAME>
+</tr></td></table>
+'''
+  time.sleep(0.3)
+  textfile_output_final.write(final_last_html_menu)
   time.sleep(0.3)
   textfile_output_final.close
   time.sleep(0.3)
@@ -1009,7 +1118,7 @@ def convert_readme_main_to_html():
 def convert_readme_all_to_html():
   print("=== CONVERTING README ALL HTML ===")
   readme_all_txtfile = str(output_dir) + 'readme_all.md'
-  readme_all_html_output =  str(output_dir) + 'readme_all_html.html'
+  readme_all_html_output =  str(output_dir) + 'hip.html'
   markdown.markdownFromFile(input=readme_all_txtfile, output=readme_all_html_output)
 
 def fix_main_readme_html():
