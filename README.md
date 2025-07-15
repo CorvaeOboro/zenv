@@ -15,6 +15,7 @@
 - Edit zenv.json file text line to match local path to zenv folder
 - Alternatively may copy the included houdini.env to ( C:/Users/USER/Documents/houdini18.5/ ) editing to match local path of zenv folder
 - Install reccomended houdini [libraries]( https://github.com/CorvaeOboro/zenv#recommended-libraries ) 
+- Open houdini , most tools are in SOPs in the zenv category , can view scene examples in /hip folder for each corresponding HDA tool
 
 ## HDA TOOLS LIST ##
 jump to category :
@@ -32,6 +33,8 @@ jump to category :
 
 click names below for tool example :
 ## CREATE ##
+<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/docs/zenv_create_wide.png?raw=true" width="600" />
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_BRICKMAIN_01"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_BRICKMAIN_01_icon.png" width = "40" height = "40"/></a>| **[z GEN BRICKMAIN 01](https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_BRICKMAIN_01)**|stone brick variation generator , creates set of low and hipoly for baking|
@@ -55,7 +58,10 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_LATTICE_GRIDMESH"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_LATTICE_GRIDMESH_icon.png" width = "40" height = "40"/></a>| **[z GEN LATTICE GRIDMESH](https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_LATTICE_GRIDMESH)**|creates a box of grids with interior points ideal for use as a lattice deformer|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_HEXA_STRUCTURE"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_HEXA_STRUCTURE_icon.png" width = "40" height = "40"/></a>| **[z GEN HEXA STRUCTURE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_HEXA_STRUCTURE)**|creates a hexagon support structure based on input mesh|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_RUNES"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_GEN_RUNES_icon.png" width = "40" height = "40"/></a>| **[z GEN RUNES](https://github.com/corvaeoboro/zenv/tree/master/hip/z_GEN_RUNES)**|creates rune like symbols|
+
 ## PLANTS ##
+<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/docs/zenv_plants_wide.png?raw=true" width="600" /> 
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_HELIX_ROOTS"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PLANTS_HELIX_ROOTS_icon.png" width = "40" height = "40"/></a>| **[z PLANTS HELIX ROOTS](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_HELIX_ROOTS)**|create winding intertwined roots from a guide line .|
@@ -69,7 +75,10 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_BARK_PLACER"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PLANTS_BARK_PLACER_icon.png" width = "40" height = "40"/></a>| **[z PLANTS BARK PLACER](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_BARK_PLACER)**|layout bark on mesh surface guided by curves , smooth aligned , used with tree|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_PETAL_FORM"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PLANTS_PETAL_FORM_icon.png" width = "40" height = "40"/></a>| **[z PLANTS PETAL FORM](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_PETAL_FORM)**|creates petal from curve backbone and multiple warped elipse curves defining the shape changes over the length of the backbone|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_SCATTER_LEDGE"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PLANTS_SCATTER_LEDGE_icon.png" width = "40" height = "40"/></a>| **[z PLANTS SCATTER LEDGE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PLANTS_SCATTER_LEDGE)**|places hanging plants aligned along edges of input mesh with collision checks|
+
 ## ITEM ##
+<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/docs/zenv_item_wide.png?raw=true" width="600" /> 
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_ABILITY_ICON"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_ITEM_ABILITY_ICON_icon.png" width = "40" height = "40"/></a>| **[z ITEM ABILITY ICON](https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_ABILITY_ICON)**|creates variety of icon of ability in TOPS by wedgenum|
@@ -83,7 +92,10 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_POTION_FROM_IMAGE"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_ITEM_POTION_FROM_IMAGE_icon.png" width = "40" height = "40"/></a>| **[z ITEM POTION FROM IMAGE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_POTION_FROM_IMAGE)**|revolves a potion mesh from image|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_BOW"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_ITEM_BOW_icon.png" width = "40" height = "40"/></a>| **[z ITEM BOW](https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_BOW)**|creates bow item variants|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_STAFF"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_ITEM_STAFF_icon.png" width = "40" height = "40"/></a>| **[z ITEM STAFF](https://github.com/corvaeoboro/zenv/tree/master/hip/z_ITEM_STAFF)**|creates staff item variants|
+
 ## PATH ##
+<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/docs/zenv_path_wide.png?raw=true" width="600" /> 
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_BASE"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PATH_BASE_icon.png" width = "40" height = "40"/></a>| **[z PATH BASE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_BASE)**|creates a PATH floor section and collision , this is the base for all path snapmap variants|
@@ -96,7 +108,10 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_REVIEW"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PATH_REVIEW_icon.png" width = "40" height = "40"/></a>| **[z PATH REVIEW](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_REVIEW)**|layout path based meshes to review their connections|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_2SPLINE_COLLISION"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PATH_2SPLINE_COLLISION_icon.png" width = "40" height = "40"/></a>| **[z PATH 2SPLINE COLLISION](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_2SPLINE_COLLISION)**|input two curves defining the border of a path , creates floor geo and collision for gameplay|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_ISO_EXTRUDE"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_PATH_ISO_EXTRUDE_icon.png" width = "40" height = "40"/></a>| **[z PATH ISO EXTRUDE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_PATH_ISO_EXTRUDE)**|isometric camera angle extrude , for use with PATH to avoid camera blocking geo|
+
 ## LAYOUT ##
+<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/docs/zenv_layout_wide.png?raw=true" width="600" /> 
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK_icon.png" width = "40" height = "40"/></a>| **[z COPY TO POINTS BY PIECENUM INTERSECTIONCHECK](https://github.com/corvaeoboro/zenv/tree/master/hip/z_COPY_TO_POINTS_BY_PIECENUM_INTERSECTIONCHECK)**|copy variants by piecenum attribute with collision checks|
@@ -104,7 +119,10 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_COPY_TO_EVENLY_DISTRIBUTED_GRID"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_COPY_TO_EVENLY_DISTRIBUTED_GRID_icon.png" width = "40" height = "40"/></a>| **[z COPY TO EVENLY DISTRIBUTED GRID](https://github.com/corvaeoboro/zenv/tree/master/hip/z_COPY_TO_EVENLY_DISTRIBUTED_GRID)**|copy by piecenum to dynamic evenly spaced grid - useful when baking and review|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_TILEABLE"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_TILEABLE_icon.png" width = "40" height = "40"/></a>| **[z TILEABLE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_TILEABLE)**|copies input to each of the nearby quadrants preview tiling ( 4m default )|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_TRANSFORM_ITERATE_COLLISION_CHECK"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_TRANSFORM_ITERATE_COLLISION_CHECK_icon.png" width = "40" height = "40"/></a>| **[z TRANSFORM ITERATE COLLISION CHECK](https://github.com/corvaeoboro/zenv/tree/master/hip/z_TRANSFORM_ITERATE_COLLISION_CHECK)**|iteratively move pieces towards nearest goal while avoid itersection with collision ( simplified gravity / attraction sop )|
+
 ## MODIFY ##
+<img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/docs/zenv_modify_wide.png?raw=true" width="600" /> 
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_VORONI_FRACTURE_GRADIENT_OFFSET"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_VORONI_FRACTURE_GRADIENT_OFFSET_icon.png" width = "40" height = "40"/></a>| **[z VORONI FRACTURE GRADIENT OFFSET](https://github.com/corvaeoboro/zenv/tree/master/hip/z_VORONI_FRACTURE_GRADIENT_OFFSET)**|voronoi fractures then offsets clusters by multiple world space gradients . useful for rock and cliff forms .|
@@ -121,7 +139,9 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_DEFORM_BY_HELIX"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_DEFORM_BY_HELIX_icon.png" width = "40" height = "40"/></a>| **[z DEFORM BY HELIX](https://github.com/corvaeoboro/zenv/tree/master/hip/z_DEFORM_BY_HELIX)**|deform the input mesh by a helix fit to the object bounds|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_MESH_SUBTRACT_COLLAPSE_END"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_MESH_SUBTRACT_COLLAPSE_END_icon.png" width = "40" height = "40"/></a>| **[z MESH SUBTRACT COLLAPSE END](https://github.com/corvaeoboro/zenv/tree/master/hip/z_MESH_SUBTRACT_COLLAPSE_END)**|simple boolean subtract with option to collapse . useful for quick edits in ue4|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_MESH_SLICER_SAVE"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_MESH_SLICER_SAVE_icon.png" width = "40" height = "40"/></a>| **[z MESH SLICER SAVE](https://github.com/corvaeoboro/zenv/tree/master/hip/z_MESH_SLICER_SAVE)**|separates large meshes into grided sections and exports them to fbx , options for specific area exports , and compatible with houdini engine .|
+
 ## REMOVAL ##
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_REMOVE_PIECES_BY_VOLUME"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_REMOVE_PIECES_BY_VOLUME_icon.png" width = "40" height = "40"/></a>| **[z REMOVE PIECES BY VOLUME](https://github.com/corvaeoboro/zenv/tree/master/hip/z_REMOVE_PIECES_BY_VOLUME)**|for each connected element , remove if doesnt match min or max measured volume , also has options of perimeter or other measurements|
@@ -129,7 +149,9 @@ click names below for tool example :
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_KEEP_BIGGER_OF_TWO"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_KEEP_BIGGER_OF_TWO_icon.png" width = "40" height = "40"/></a>| **[z KEEP BIGGER OF TWO](https://github.com/corvaeoboro/zenv/tree/master/hip/z_KEEP_BIGGER_OF_TWO)**|takes two inputs and ouputs only one ( bigger or smaller )|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_KEEP_ONLY_FIRST_LAST_PRIMS"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_KEEP_ONLY_FIRST_LAST_PRIMS_icon.png" width = "40" height = "40"/></a>| **[z KEEP ONLY FIRST LAST PRIMS](https://github.com/corvaeoboro/zenv/tree/master/hip/z_KEEP_ONLY_FIRST_LAST_PRIMS)**|carve for prim lines after segments split|
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_REMOVE_THIN_MESH"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_REMOVE_THIN_MESH_icon.png" width = "40" height = "40"/></a>| **[z REMOVE THIN MESH](https://github.com/corvaeoboro/zenv/tree/master/hip/z_REMOVE_THIN_MESH)**|removes prims based on thickness measurement , then can fill in holes , useful for removing thin slivers|
+
 ## UV ##
+
 |  ______    |      |      |
 | :--- | :--- | :--- |
 |<a href="https://github.com/corvaeoboro/zenv/tree/master/hip/z_UV_AXIS_ALIGN_SNAP"><img src="https://raw.githubusercontent.com/CorvaeOboro/zenv/master/icon/z_UV_AXIS_ALIGN_SNAP_icon.png" width = "40" height = "40"/></a>| **[z UV AXIS ALIGN SNAP](https://github.com/corvaeoboro/zenv/tree/master/hip/z_UV_AXIS_ALIGN_SNAP)**|optimize uv location , moves uvs to zero to one space for precision in games|
